@@ -1,3 +1,60 @@
-.h-container {
-  color: black;
+:root {
+  --background-color-primary: #5e17eb;
+  --section-background-color: #f9f7cf;
+  --footer-color-primary: #fff34e;
+  --color-nav: #fff34e;
+  --font-color: #f9f7cf;
+  --font-color-opt: #f8f8fc;
+  --neutral-white-color: white;
 }
+
+.h-container {
+  display: flex;
+  color: black;
+  gap: 3px;
+}
+.logo-img {
+  width: 400px;
+  border-radius: 20%;
+}
+.h-description {
+  text-align: center;
+}
+
+.h-description h1 {
+  font-size: 40px;
+}
+
+.h-description p {
+  font-size: 30px;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.h-description a {
+  /* border: 12% solid black; */
+  background-color: var(--background-color-primary);
+  /* margin-top: 10%; */
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--font-color-opt);
+  padding: 20px;
+
+  border-radius: 1.5rem;
+}
+
+.item-card {
+  /* background-color: red; */
+  width: 400px;
+  height: 400px;
+}
+
+/* @media (max-width: 768px) {
+ .h-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    gap: 30px;
+  } 
+} */
