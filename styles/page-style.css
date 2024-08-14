@@ -31,14 +31,14 @@ header {
 }
 
 .logo-page {
-  width: 150px;
+  width: 140px;
   margin-top: 30px;
   border-radius: 90%;
   transition: box-shadow 1.5s;
 }
 
 .logo-page:hover {
-  width: 150px;
+  width: 140px;
   margin-top: 30px;
   border-radius: 90%;
   -webkit-box-shadow: 10px 10px 125px -52px rgba(255, 255, 78, 1);
@@ -69,7 +69,7 @@ header {
 }
 
 section {
-  margin: 0px 1%;
+  margin: 0px 2%;
 }
 
 /*---- Page sections ---------*/
@@ -78,7 +78,7 @@ section {
 .home-page {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   min-height: 100vh;
   /* background-color: var(--section-background-color); */
   background-color: var(--neutral-white-color);
@@ -99,6 +99,11 @@ section {
 /*Section 3 - Projects*/
 .project-page {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: black;
   /* background-color: var(--background-color-secondary); */
   /* background-color: var(--section-background-color); */
   background-color: var(--neutral-white-color);
@@ -108,7 +113,7 @@ section {
 .artwork-page {
   min-height: 100vh;
   /* background-color: var(--background-color-secondary); */
-  background-color: var(--section-background-color);
+  background-color: var(--neutral-white-color);
 }
 
 /*Section 5 - Contact-Page*/
@@ -126,7 +131,7 @@ footer {
   min-height: 30vh;
   color: black;
   background-color: var(--footer-color-primary);
-  margin: 0px 1%;
+  margin: 0px 2%;
 }
 
 /* Mobile view */
@@ -147,6 +152,6 @@ footer {
     margin-bottom: 30px;
   }
   section {
-    margin: 0px 1%;
+    margin: 0px 2%;
   }
 }

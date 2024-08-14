@@ -16,7 +16,37 @@
   justify-content: center;
   /* background-color: red; */
   width: 100%;
+  height: 60vh;
   max-width: 960px;
+  gap: 30px;
+}
+
+.h-container h1 {
+  font-size: 3em;
+}
+
+.h-description {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.h-description p {
+  font-size: 30px;
+}
+
+.h-description h1 {
+  font-size: 6em;
+}
+/* .logo-img {
+  width: 200px;
+  border-radius: 20%;
+} */
+
+.page-title {
+  font-size: 2em;
+  color: grey;
+  margin-bottom: 20px;
+  text-transform: none;
 }
 .ab-description {
   margin-bottom: 10px;
@@ -34,7 +64,7 @@
 }
 .ab-conatiner img {
   width: 450px;
-  margin-top: 2.4%;
+  /* margin-top: 2.4%; */
   /* background-color: red; */
   /* border: #5e17eb solid; */
 }
@@ -48,12 +78,12 @@
 }
 
 .ab-description img {
-  width: 500px;
+  width: 700px;
   margin-bottom: 10px;
 }
 .ab-mybio {
   font-size: 1rem;
-  color: black;
+  color: grey;
   width: 100%;
   max-width: 50rem;
   padding: 0px 30px;
@@ -66,20 +96,8 @@
   color: var(--background-color-primary);
 }
 
-.logo-img {
-  width: 300px;
-  border-radius: 20%;
-}
-
 /*Projects*/
 
-.project-page {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  color: black;
-}
 .proj-conatiner {
   /* background-color: red;
   width: 100%;
@@ -109,8 +127,16 @@
   text-align: center;
   align-content: center;
 
-  background-color: var(--background-color-primary);
+  /* background-color: var(--background-color-primary); */
 }
+
+.proj-card img {
+  width: 190px;
+}
+
+/* #ymca-logo {
+  width: 100px;
+} */
 /* @media (max-width: 768px) {
  .h-container {
     display: flex;
