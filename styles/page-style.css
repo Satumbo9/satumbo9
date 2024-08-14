@@ -100,7 +100,8 @@ section {
 .project-page {
   min-height: 100vh;
   /* background-color: var(--background-color-secondary); */
-  background-color: var(--section-background-color);
+  /* background-color: var(--section-background-color); */
+  background-color: var(--neutral-white-color);
 }
 
 /*Section 4 - ArtWork*/
