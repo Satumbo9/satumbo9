@@ -31,14 +31,14 @@ header {
 }
 
 .logo-page {
-  width: 400px;
+  width: 150px;
   margin-top: 30px;
   border-radius: 90%;
   transition: box-shadow 1.5s;
 }
 
 .logo-page:hover {
-  width: 400px;
+  width: 150px;
   margin-top: 30px;
   border-radius: 90%;
   -webkit-box-shadow: 10px 10px 125px -52px rgba(255, 255, 78, 1);
@@ -59,7 +59,7 @@ header {
   color: var(--font-color);
   margin: 0 30px;
   text-transform: uppercase;
-  transition: border-bottom 1.5 ease-in-out;
+  transition: border-bottom 0.5s;
 }
 
 .nav-menu a:hover {
@@ -88,9 +88,12 @@ section {
 
 /*Section 2 - About*/
 .about-page {
+  display: flex;
+  justify-content: center;
   min-height: 100vh;
   /* background-color: var(--background-color-secondary); */
-  background-color: var(--section-background-color);
+  /* background-color: var(--section-background-color); */
+  background-color: var(--neutral-white-color);
 }
 
 /*Section 3 - Projects*/
@@ -128,14 +131,14 @@ footer {
 /* Mobile view */
 @media (max-width: 855px) {
   .logo-page {
-    width: 200px;
+    margin-bottom: 20px;
   }
   .logo-page:hover {
-    width: 200px;
+    width: 150px;
   }
 
   .nav-menu {
-    display: flex;
+    display: none;
     flex-direction: column;
     text-align: center;
   }
@@ -143,6 +146,6 @@ footer {
     margin-bottom: 30px;
   }
   section {
-    margin: 0px 3%;
+    margin: 0px 1%;
   }
 }
