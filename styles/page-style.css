@@ -17,146 +17,46 @@
 
 body {
   background-color: var(--background-color-primary);
-  color: var(--neutral-white-color);
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+nav {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-}
-
-.logo-page {
-  width: 150px;
-  margin-top: 30px;
-  border-radius: 90%;
-  transition: box-shadow 1.5s;
-}
-
-.logo-page:hover {
-  width: 150px;
-  margin-top: 30px;
-  border-radius: 90%;
-  -webkit-box-shadow: 10px 10px 125px -52px rgba(255, 255, 78, 1);
-  -moz-box-shadow: 10px 10px 125px -52px rgba(255, 255, 78, 1);
-  box-shadow: 10px 10px 125px -52px rgba(255, 255, 78, 1);
-
-  /* border: solid 3px black; */
-}
-
-.nav-menu {
-  display: flex;
-  list-style-type: none;
-  margin: 30px 0px;
-  gap: 20px;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  color: var(--font-color);
-  /* margin: 0 30px; */
-
-  text-transform: uppercase;
-  transition: border-bottom 0.5s;
-}
-
-.nav-menu a:hover {
+  justify-content: space-between;
   color: var(--color-nav);
-  padding: 4px 0px;
-  border-bottom: 3px solid var(--footer-color-primary);
+  font-size: 25px;
 }
 
-section {
-  margin: 0px 2%;
-  /* border-bottom: rgb(240, 240, 240) solid; */
-}
-
-/*---- Page sections ---------*/
-
-/*Section 1 - Home*/
-.home-page {
+.logo-menu {
   display: flex;
-  justify-content: center;
-  /* align-items: center; */
-  min-height: 100vh;
-  /* background-color: var(--section-background-color); */
-  background-color: var(--neutral-white-color);
-  border-top-left-radius: 1.4%;
-  border-top-right-radius: 1.4%;
+  padding: 45px 26px;
+  justify-content: space-between;
+  width: 300px;
 }
 
-/*Section 2 - About*/
-.about-page {
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  /* background-color: var(--background-color-secondary); */
-  /* background-color: var(--section-background-color); */
-  background-color: var(--neutral-white-color);
+.logo-menu a {
+  color: var(--color-nav);
+  text-decoration: none;
 }
 
-/*Section 3 - Projects*/
-.project-page {
-  min-height: 100vh;
+.item-menu ul {
   display: flex;
-  justify-content: center;
+  width: 600px;
+  height: 117px;
+  justify-content: space-between;
+  padding: 45px 26px;
+  list-style-type: none;
+}
+.item-menu ul a {
+  text-decoration: none;
+  color: var(--color-nav);
+}
+.work-date {
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  color: black;
-  /* background-color: var(--background-color-secondary); */
-  /* background-color: var(--section-background-color); */
-  background-color: var(--neutral-white-color);
+  text-align: center;
 }
 
-/*Section 4 - ArtWork*/
-.artwork-page {
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  /* background-color: var(--background-color-secondary); */
-  background-color: var(--neutral-white-color);
-}
-
-/*Section 5 - Contact-Page*/
-.contact-page {
-  min-height: 100vh;
-  /* background-color: var(--background-color-secondary); */
-  background-color: var(--section-background-color);
-}
-
-/*Footer - Footer Information*/
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 30vh;
-  color: black;
-  background-color: var(--footer-color-primary);
-  margin: 0px 2%;
-}
-
-/* Mobile view */
-@media (max-width: 53.4375em) {
-  .logo-page {
-    margin-bottom: 0px;
-  }
-  .logo-page:hover {
-    width: 150px;
-  }
-
-  .nav-menu {
-    /* display: none; */
-    flex-direction: column;
-    text-align: center;
-  }
-  .nav-menu li {
-    margin-bottom: 0px;
-  }
-  section {
-    margin: 0px 2%;
-  }
+.work-date span {
+  font-size: 0.4em;
 }
