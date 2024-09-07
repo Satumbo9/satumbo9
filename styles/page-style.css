@@ -25,13 +25,19 @@ nav {
   justify-content: space-between;
   color: var(--color-nav);
   font-size: 25px;
+  padding-top: 45px;
+  padding-left: 26px;
+  padding-right: 26px;
+  /* background-color: red; */
+  height: 100px;
 }
 
 .logo-menu {
   display: flex;
-  padding: 45px 26px;
+
   justify-content: space-between;
-  width: 300px;
+  /* width: 300px; */
+  gap: 30px;
 }
 
 .logo-menu a {
@@ -39,19 +45,28 @@ nav {
   text-decoration: none;
 }
 
+.logo-menu span {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.logo-menu span:hover {
+  cursor: help;
+}
+
 .item-menu ul {
   display: flex;
   width: 600px;
   height: 117px;
   justify-content: space-between;
-  padding: 45px 26px;
+
   list-style-type: none;
 }
 .item-menu ul a {
   text-decoration: none;
   color: var(--color-nav);
 }
-.work-date {
+.work-date a {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -59,4 +74,10 @@ nav {
 
 .work-date span {
   font-size: 0.4em;
+}
+
+.galery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
