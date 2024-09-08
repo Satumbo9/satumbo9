@@ -33,14 +33,16 @@ nav {
 }
 
 .logo-menu {
-  display: flex;
+  /* display: flex; */
 
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* width: 300px; */
-  gap: 30px;
+  /* gap: 30px; */
 }
 
 .logo-menu a {
+  display: flex;
+  gap: 0.3em;
   color: var(--color-nav);
   text-decoration: none;
 }
@@ -51,7 +53,7 @@ nav {
 }
 
 .logo-menu span:hover {
-  cursor: help;
+  /* cursor: help; */
 }
 
 .item-menu ul {
