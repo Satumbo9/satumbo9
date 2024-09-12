@@ -1,6 +1,8 @@
 export default function Footer() {
     return (
-      <section>
+      <section
+      className="h-[10vh]  bg-[#FFFF4E]"
+      >
         <p> Footer</p>
       </section>
     );

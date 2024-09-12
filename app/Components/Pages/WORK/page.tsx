@@ -9,8 +9,8 @@ export default function WorkPage() {
       <section
       id="WORK"
       className="h-[100vh] flex flex-col justify-center">
-        <div className=''>
-          <p> 
+        <div className='flex flex-col items-center mb-40'>
+          <p className='text-[4em] text-center'> 
           Art Work
           </p>
           <div className='flex gap-4 '>
@@ -26,22 +26,24 @@ export default function WorkPage() {
           </div>
         </div>
 
-        <div className=''>
-          <p> 
-          Software Dev
-          </p>
+        <div >
+    
+          <div> 
+            <p className='text-center text-[4em]'>Software Dev</p> 
+          <div className='flex items-center justify-center'>
+    
           {
+            
             PROFESSIONAL_CAREER.map((items)=>(
               <CardItems 
               id={items.id}
               title={items.name}
               description={items.name}
-
-
-              
               />
             ))
           }
+          </div>
+        </div>
         </div>
 
         

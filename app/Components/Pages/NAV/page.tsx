@@ -9,7 +9,7 @@ export default function Nav() {
     return (
       // Header for the nav bar 
       <header>
-        <div className="h-[8vh] flex justify-between text-[2em] pt-[30px]">
+        <div className="h-[8vh] flex justify-between text-[2em] pt-[30px] mb-5">
           <div>
             <Link  
             className='flex gap-[1em]'
@@ -33,7 +33,7 @@ export default function Nav() {
                 </Link>
               </li>
               <li>
-                <Link href={'#'}>talk-to-me</Link>
+                <Link href={'#TALK'}>talk-to-me</Link>
               </li>
             </ul>
             
