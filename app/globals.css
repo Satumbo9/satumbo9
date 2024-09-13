@@ -6,12 +6,13 @@
   --background: #ffffff;
   --foreground: #171717;
 
-  --Background-primary:#9967DA;
-  --Background-secondary: #5A65C4;
-  --Color-white:white;
-  --Color-yellow:#FFFF4E;
-  --Color-black:black;
-  --Color-purple:#9967DA;  
+  --Background-primary: #9967da;
+  --Background-secondary: #5a65c4;
+  --Color-white: white;
+  --Color-yellow: #ffff4e;
+  --Color-black: black;
+  --Color-purple: #9967da;
+  --page-links: pink;
 }
 
 @media (prefers-color-scheme: dark) {
