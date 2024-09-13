@@ -34,7 +34,7 @@ export default function AboutPage() {
 
       </div>
       <div
-      className="mt-[5em] w-full  flex items-center justify-center flex-col text-center">
+      className="mt-[5em] md:mt-[10em] w-full  flex items-center justify-center flex-col text-center">
         <p className="font-bold text-[2em]">Education</p>
 
         <div  

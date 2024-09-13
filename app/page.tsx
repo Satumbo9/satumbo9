@@ -14,7 +14,7 @@ export default function Home() {
       <HomePage />
       <About />
       <WORK />
-      <TALK />
+      {/* <TALK /> */}
       <FOOTER />
     </>
   );
