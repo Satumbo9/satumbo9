@@ -8,10 +8,9 @@ export default function CardItems({id, title,description}:{id:number, title:stri
 
     return(
         <div
-        className="w-[300px]  p-10 flex flex-col items-center text-center" 
         key={id}>
-        <p className="text-[2em] font-bold text-center">{title}</p>
-        <p>{description}</p>
+        <p className="text-[1em] md:font-bold text-center ">{title}</p>
+        <p className="hidden md:inline-block ml-4 w-[200px] mt-3 text-center">{description}</p>
         </div>
     )
 }

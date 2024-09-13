@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${geistMono.variable} ${inter.className} antialiased px-10`}
+        className={`${inter.className} ${geistMono.variable} ${inter.className} antialiased px-5`}
       >
         {children}
       </body>

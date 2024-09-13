@@ -5,11 +5,16 @@ import Link from "next/link";
 export default function Nav() {
   return (
     // Header for the nav bar
-    <header className="font-bold">
-      <div className="h-[8vh] flex justify-between text-[2em] pt-[30px] mb-10">
+    <header>
+      <div 
+      
+      // className="h-[8vh]  mb-10 md:h-[8vh] md:flex md:justify-between md:text-[2em] md:pt-[30px] md:mb-10"
+      className="hidden lg:flex items-center lg:justify-between"
+      >
         <div>
           <Link
-            className="flex gap-[1em] hover:text-[--page-links]"
+            
+            className="flex gap-[1em] hover:text-[--page-links] "
             href={"#Home"}
           >
             <p>Satumbo9</p>
@@ -17,7 +22,13 @@ export default function Nav() {
           </Link>
         </div>
         <div>
-          <ul className="flex gap-[10em]">
+          <ul 
+          
+          // className="xl:flex xl:gap-[10em] xl:items-center"
+
+          className="flex gap-[10em] items-center"
+          
+          >
             <li className="hover:text-[--page-links]">
               <Link href={"#ABOUT"}>about</Link>
             </li>

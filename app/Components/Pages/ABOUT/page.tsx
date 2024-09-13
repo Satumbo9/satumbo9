@@ -16,23 +16,32 @@ import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <section id="ABOUT" className="h-[100vh] flex  flex-col justify-center ">
-      <div className="w-[80vh] h-[40vh] ">
-        {BACKGROUND_INFO.map((items) => (
-          <Card
-            id={items.id}
-            title={items.title}
-            description={items.description}
-          />
-        ))}
+    <section id="ABOUT"
+    
+    className="h-[100vh]  flex flex-col items-center"
+    >
+      <div
+      className="w-full"
+      >
+        <p className="font-bold text-[2em] text-center md:text-start ">Bio:</p>
+        <p 
+        className="md:w-[666px]"
+        >
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+        </p>
+
+
       </div>
+      <div
+      className="mt-[5em] w-full  flex items-center justify-center flex-col text-center">
+        <p className="font-bold text-[2em]">Education</p>
 
-      <div className="flex flex-col  items-center">
-        <p className="text-[4em] font-bold">Education</p>
-
-        <div className="flex gap-10 mt-4">
+        <div  
+        className="flex flex-col md:flex md:flex-row 
+        ">
           {EDUCATION_LIST.map((items) => (
-            <Link className="hover:text-[--page-links]" href={items.link}>
+            <Link className="lg:hover:text-[--page-links] mt-3" href={items.link}>
               <CardItems
                 id={items.id}
                 title={items.name}

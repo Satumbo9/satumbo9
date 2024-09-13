@@ -11,7 +11,7 @@ export default function Card({
 }) {
   return (
     <div key={id}>
-      <p className="text-[4em] font-bold">{title}</p>
+      <p className="text-[4em] font-bold ">{title}</p>
       <p>{description}</p>
     </div>
   );
