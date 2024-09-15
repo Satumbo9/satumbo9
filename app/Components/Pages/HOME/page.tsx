@@ -5,7 +5,10 @@ import satumboLogo from "../../Img/logo/satumbo9-logo.png";
 
 export default function HomePage() {
   return (
-    <section id="Home" className="flex flex-col  h-[100vh] items-center justify-center ">
+    <section
+      id="Home"
+      className="flex flex-col  h-[100vh] items-center justify-center "
+    >
       <div>
         <Image
           className="rounded-full"
@@ -15,11 +18,10 @@ export default function HomePage() {
           alt="Satumbo9 logo"
         />
       </div>
-      <div 
-      
-      // className="text-[1.5em]  text-center md:text-[1.5em] md:w-[666px] md:h-[68px] md:text-center "
+      <div
+        // className="text-[1.5em]  text-center md:text-[1.5em] md:w-[666px] md:h-[68px] md:text-center "
 
-      className="text-[1.3em] md:text-[2em] p-2 text-center lg:w-[31.25em]"
+        className="text-[1em] md:text-[1.40em] p-2 text-center w-[20.10em] md:w-[30.25em]"
       >
         <p>
           Satumbo9 was born in the 90s and still alive making doing amazing art

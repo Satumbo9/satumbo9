@@ -16,32 +16,53 @@ import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <section id="ABOUT"
-    
-    className="h-[100vh]  flex flex-col items-center"
-    >
-      <div
-      className="w-full"
-      >
-        <p className="font-bold text-[2em] text-center md:text-start ">Bio:</p>
-        <p 
-        className="md:w-[666px]"
-        >
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
+    <section id="ABOUT" className="h-[100vh]  flex flex-col items-center">
+      <div className="w-full flex flex-col items-center md:items-start">
+        <p className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 ">
+          Hii <span>👋</span>
         </p>
-
-
+        <p className="md:w-[666px] text-center md:text-left">
+          Edimarf Satumbo is an Angolan-born professional who has a deep passion
+          for both technology and business. In 2015, Edimarf moved to Budapest
+          to pursue higher education at ELTE University, where he completed a
+          degree in Computer Science in 2021. This technical foundation sparked
+          a keen interest in web development and other facets of the tech
+          industry. After graduating, Edimarf decided to expand his expertise by
+          pursuing a degree in International Business and Economy, driven by his
+          entrepreneurial spirit and a passion for business strategy. This
+          combination of technical knowledge and business acumen has given him a
+          unique skill set, allowing him to navigate both industries with ease.
+          Throughout his journey, Edimarf has lived in various places, including
+          Miami and Arizona, where he embraced a nomadic lifestyle, often
+          finding accommodation with existing community members. His
+          adaptability and drive to connect with diverse cultures and
+          professionals reflect his open-minded and forward-thinking approach to
+          life. With his diverse academic background and hands-on experience,
+          Edimarf continues to explore opportunities in web development while
+          maintaining a strong focus on business ventures. He remains committed
+          to personal growth and is always looking for new ways to combine his
+          two passions.
+        </p>
       </div>
       <div
-      className="mt-[5em] md:mt-[10em] w-full  flex items-center justify-center flex-col text-center">
-        <p className="font-bold text-[2em]">Education</p>
+        className="mt-[5em] md:mt-[10em] w-full  
+      flex items-center justify-center flex-col text-center"
+      >
+        <p className="font-bold text-[2em] md:text-[3em] flex gap-2">
+          Education <span>📚</span>
+        </p>
 
-        <div  
-        className="flex flex-col md:flex md:flex-row 
-        ">
+        <div
+          className="flex flex-col md:flex md:flex-row 
+        "
+        >
           {EDUCATION_LIST.map((items) => (
-            <Link className="lg:hover:text-[--page-links] mt-3" href={items.link}>
+            <Link
+              target="_blank"
+              key={items.id}
+              className="lg:hover:text-[--page-links] mt-3"
+              href={items.link}
+            >
               <CardItems
                 id={items.id}
                 title={items.name}

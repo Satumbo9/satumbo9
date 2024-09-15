@@ -2,19 +2,19 @@ export const EDUCATION_LIST = [
   {
     id: 1,
     name: "ELSAMINA",
-    description: `Contrary to popular belief, Lorem Ipsum is not simply random text.`,
+    description: `High-School in Informatics 2010-2015`,
     link: "https://www.facebook.com/groups/460476108900004",
   },
   {
     id: 2,
     name: "ELTE",
-    description: `Contrary to popular belief, Lorem Ipsum is not simply random text.`,
+    description: `Bsc in Computer Science 2015-2021`,
     link: "https://www.elte.hu/en/",
   },
   {
     id: 3,
     name: "BGE",
-    description: `Contrary to popular belief, Lorem Ipsum is not simply random text.`,
+    description: `Master in Int. Business and Economy`,
     link: "https://international.uni-bge.hu/",
   },
 ];
