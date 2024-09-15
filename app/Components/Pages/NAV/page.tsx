@@ -12,7 +12,7 @@ export default function Nav() {
       >
         <div className="md:p-5">
           <Link
-            className="flex gap-[1em] hover:text-[--page-links] "
+            className="flex gap-[0.40em] hover:text-[--page-links] "
             href={"#Home"}
           >
             <p>Satumbo9</p>
@@ -35,7 +35,7 @@ export default function Nav() {
               </Link>
             </li>
             <li className="hover:text-[--page-links]">
-              <Link href={"#TALK"}>talk-to-me</Link>
+              <Link href={"#TALK"}>talk to me</Link>
             </li>
           </ul>
         </div>

@@ -53,14 +53,14 @@ export default function AboutPage() {
         </p>
 
         <div
-          className="flex flex-col md:flex md:flex-row 
+          className="flex flex-col md:flex md:flex-row mt-10
         "
         >
           {EDUCATION_LIST.map((items) => (
             <Link
               target="_blank"
               key={items.id}
-              className="lg:hover:text-[--page-links] mt-3"
+              className="lg:hover:text-[--page-links] mt-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
               href={items.link}
             >
               <CardItems

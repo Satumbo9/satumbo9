@@ -14,7 +14,7 @@ export default function WorkPage() {
           Background <span>👨🏾‍💻</span>
         </p>
 
-        <div className="flex flex-col mt-[3em] md:flex-row text-[1em] md:text-[1.3em]">
+        <div className="flex flex-col mt-10 md:flex-row text-[1em] md:text-[1.3em]">
           {PROFESSIONAL_CAREER.map((items) => (
             <CardItems
               key={items.id}

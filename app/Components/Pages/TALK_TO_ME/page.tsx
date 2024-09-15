@@ -27,21 +27,21 @@ export default function Talk_To_ME() {
         >
           <Link
             target="_blank"
-            className="italic hover:text-pink-400"
+            className="italic hover:text-pink-400 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
             href="https://www.instagram.com/satumbo9/"
           >
             Instagram
           </Link>
           <Link
             target="_blank"
-            className="italic hover:text-pink-400"
+            className="italic hover:text-pink-400 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
             href="https://www.tiktok.com/@satumbo9"
           >
             Tiktok
           </Link>
           <Link
             target="_blank"
-            className="italic hover:text-pink-400"
+            className="italic hover:text-pink-400 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
             href="https://www.youtube.com/@Satumbo9Hub"
           >
             Youtube
