@@ -10,7 +10,7 @@ export default function WorkPage() {
       className="h-[100vh] flex items-center justify-center text-center "
     >
       <div className="text-center flex flex-col items-center ">
-        <p className="text-[2em] md:text-[3em] font-bold flex gap-2">
+        <p className="text-[2em] md:text-[3em] font-bold flex gap-2 2xl:text-[3em]">
           Background <span>👨🏾‍💻</span>
         </p>
 
@@ -24,7 +24,7 @@ export default function WorkPage() {
             />
           ))}
         </div>
-        <p className="p-5 md:w-[600px] mt-10 hover:text-pink-300 h-[100px] text-10">
+        <p className="p-5 md:w-[600px] 2xl:w-[800px] mt-10 hover:text-pink-300 h-[100px] text-10 2xl:text-[1em]">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
           accusamus qui omnis quisquam sequi, reiciendis id dolorem maiores non
           dolores earum eligendi ea odit officia vel, laboriosam, ab harum

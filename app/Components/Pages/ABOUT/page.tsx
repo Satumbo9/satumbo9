@@ -18,10 +18,10 @@ export default function AboutPage() {
   return (
     <section id="ABOUT" className="h-[100vh]  flex flex-col items-center">
       <div className="w-full flex flex-col items-center md:items-start">
-        <p className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 ">
+        <p className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 2xl:text-[3em]">
           Hii <span>👋</span>
         </p>
-        <p className="md:w-[666px] text-center md:text-left">
+        <p className="md:w-[666px] 2xl:w-[800px] 2xl:text-[1em] text-center md:text-left">
           Edimarf Satumbo is an Angolan-born professional who has a deep passion
           for both technology and business. In 2015, Edimarf moved to Budapest
           to pursue higher education at ELTE University, where he completed a
@@ -48,12 +48,12 @@ export default function AboutPage() {
         className="mt-[5em] md:mt-[10em] w-full  
       flex items-center justify-center flex-col text-center"
       >
-        <p className="font-bold text-[2em] md:text-[3em] flex gap-2">
+        <p className="font-bold text-[2em] md:text-[3em] flex gap-2 2xl:text-[3em]">
           Education <span>📚</span>
         </p>
 
         <div
-          className="flex flex-col md:flex md:flex-row mt-10
+          className="flex flex-col md:flex md:flex-row mt-10 2xl:text-[1em]
         "
         >
           {EDUCATION_LIST.map((items) => (
