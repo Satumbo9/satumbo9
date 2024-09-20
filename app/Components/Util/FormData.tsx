@@ -2,13 +2,16 @@
 "use client";
 import {useForm} from 'react-hook-form';
 import PropTypes from 'prop-types';
+import React from 'react';
+import { z } from 'zod';
 
+//Zod validation definition
+const formSchema = z.object({
+  name: z.string().min(5).max(10),
+  email: z.string().email().min(10).max(20),
+  phoneNumber: z.number().min(5).max(20),
 
-function handleSubmit(){
-  console.log("Hello");
-}
-
-import React from 'react'
+});
 
 export const FormData = ({children, className, onSubmit}:{children:React.ReactNode, className?:string, onSubmit?:void}) => {
   return (
