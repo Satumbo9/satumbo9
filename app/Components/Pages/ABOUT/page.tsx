@@ -1,6 +1,6 @@
 import { EDUCATION_LIST } from "@/app/Components/Data/Education";
-import { BACKGROUND_INFO } from "@/app/Components/Data/Background";
-import Card from "@/app/Components/Util/Card";
+// import { BACKGROUND_INFO } from "@/app/Components/Data/Background";
+// import Card from "@/app/Components/Util/Card";
 import CardItems from "@/app/Components/Util/CardItems";
 import Link from "next/link";
 
@@ -16,7 +16,7 @@ import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <section id="ABOUT" className="h-[100vh]  flex flex-col items-center">
+    <section id="ABOUT" className="min-h-[100vh]  flex flex-col items-center">
       <div className="w-full flex flex-col items-center md:items-start">
         <p className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 2xl:text-[3em]">
           Hii <span>👋</span>
@@ -45,7 +45,7 @@ export default function AboutPage() {
         </p>
       </div>
       <div
-        className="mt-[5em] md:mt-[10em] w-full  
+        className="mt-[5em] 2xl:mt-[2em] md:mt-[6em] w-full  
       flex items-center justify-center flex-col text-center"
       >
         <p className="font-bold text-[2em] md:text-[3em] flex gap-2 2xl:text-[3em]">
@@ -53,14 +53,15 @@ export default function AboutPage() {
         </p>
 
         <div
-          className="flex flex-col md:flex md:flex-row mt-10 2xl:text-[1em]
+          className="flex flex-col md:flex md:flex-row 2xl:text-[1em] gap-2
         "
         >
           {EDUCATION_LIST.map((items) => (
             <Link
               target="_blank"
               key={items.id}
-              className="lg:hover:text-[--page-links] mt-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="lg:hover:text-[--page-links] mt-3 
+              md:text-[1.3em]"
               href={items.link}
             >
               <CardItems

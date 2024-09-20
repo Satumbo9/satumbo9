@@ -10,7 +10,7 @@ export default function CardImage({
   h,
 }: {
   id: number;
-  img: any;
+  img: string;
   title: string;
   w: number;
   h: number;

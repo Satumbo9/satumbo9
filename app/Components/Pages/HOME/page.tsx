@@ -1,5 +1,5 @@
-import { BACKGROUND_INFO } from "@/app/Components/Data/Background";
-import { EDUCATION_LIST } from "@/app/Components/Data/Education";
+// import { BACKGROUND_INFO } from "@/app/Components/Data/Background";
+// import { EDUCATION_LIST } from "@/app/Components/Data/Education";
 import Image from "next/image";
 import satumboLogo from "../../Img/logo/satumbo9-logo.png";
 
@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <section
       id="Home"
-      className="flex flex-col  h-[100vh] items-center justify-center  "
+      className="flex flex-col  min-h-[100vh] items-center justify-center  "
     >
       <div>
         <Image
