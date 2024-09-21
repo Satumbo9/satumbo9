@@ -1,6 +1,6 @@
 import { EDUCATION_LIST } from "@/app/Components/Data/Education";
-import { BACKGROUND_INFO } from "@/app/Components/Data/Background";
-import Card from "@/app/Components/Util/Card";
+// import { BACKGROUND_INFO } from "@/app/Components/Data/Background";
+// import Card from "@/app/Components/Util/Card";
 import CardItems from "@/app/Components/Util/CardItems";
 import Link from "next/link";
 
@@ -45,17 +45,14 @@ export default function AboutPage() {
         </p>
       </div>
       <div
-        className="mt-[5em] md:mt-[10em] w-full  
+        className="mt-[5em] md:mt-[8em] w-full  
       flex items-center justify-center flex-col text-center"
       >
         <p className="font-bold text-[2em] md:text-[3em] flex gap-2">
           Education <span>📚</span>
         </p>
 
-        <div
-          className="flex flex-col md:flex md:flex-row mt-10
-        "
-        >
+        <div className="flex flex-col md:flex md:flex-row md:mt-5">
           {EDUCATION_LIST.map((items) => (
             <Link
               target="_blank"

@@ -1,7 +1,7 @@
-import { SOCIAL_MEDIAS } from "../../Data/SocialMedias";
-import CardImage from "../../Util/CardImage";
-import imagePlaceHolder from "../../Assets/Img/placeHolder1.jpg";
-import satumbo9Logo from "../../Img/logo/satumbo9-logo.png";
+// import { SOCIAL_MEDIAS } from "../../Data/SocialMedias";
+// import CardImage from "../../Util/CardImage";
+// import imagePlaceHolder from "../../Assets/Img/placeHolder1.jpg";
+// import satumbo9Logo from "../../Img/logo/satumbo9-logo.png";
 import Link from "next/link";
 // import Image from "next/image";
 

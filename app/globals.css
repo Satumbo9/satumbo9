@@ -13,6 +13,7 @@
   --Color-black: black;
   --Color-purple: #9967da;
   --page-links: pink;
+  --Text-grey: #4b5563;
 }
 
 @media (prefers-color-scheme: dark) {

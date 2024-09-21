@@ -1,6 +1,5 @@
-import Image from "next/image";
 import HomePage from "@/app/Components/Pages/HOME/page";
-import About from "@/app/Components/Pages/ABOUT/page";
+import ABOUT from "@/app/Components/Pages/ABOUT/page";
 import WORK from "@/app/Components/Pages/WORK/page";
 import TALK from "@/app/Components/Pages/TALK_TO_ME/page";
 import NAV from "@/app/Components/Pages/NAV/page";
@@ -11,7 +10,7 @@ export default function Home() {
     <>
       <NAV />
       <HomePage />
-      <About />
+      <ABOUT />
       <WORK />
       <TALK />
       <FOOTER />

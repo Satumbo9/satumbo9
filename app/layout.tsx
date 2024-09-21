@@ -3,14 +3,12 @@ import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 
 import "./globals.css";
-import NAV from "@/app/Components/Pages/NAV/page";
-import FOOTER from "@/app/Components/Pages/FOOTER/page";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -30,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${inter.className} ${geistMono.variable} ${inter.className} antialiased px-5`}
       >

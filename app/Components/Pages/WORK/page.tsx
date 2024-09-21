@@ -1,5 +1,3 @@
-import { ART_WORK } from "@/app/Components/Data/ArtWork";
-import Image from "next/image";
 import CardItems from "../../Util/CardItems";
 import { PROFESSIONAL_CAREER } from "@/app/Components/Data/Profession";
 

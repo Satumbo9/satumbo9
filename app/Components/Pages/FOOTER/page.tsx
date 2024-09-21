@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Footer() {
   return (
-    <section className="h-[20vh]  bg-[#FFFF4E]  flex justify-center items-center text-gray-600">
+    <section className="h-[20vh]  bg-[#FFFF4E]  flex justify-center items-center text-gray-600 ">
       <div className="flex flex-col justify-center md:flex-row md:justify-between w-full md:w-[900px] items-center md:items-start">
         <Link href="#" aria-label="logo-top-up">
           <Image
