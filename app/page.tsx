@@ -7,13 +7,13 @@ import FOOTER from "@/app/Components/Pages/FOOTER/page";
 
 export default function Home() {
   return (
-    <>
+    <section>
       <NAV />
       <HomePage />
       <ABOUT />
       <WORK />
       <TALK />
       <FOOTER />
-    </>
+    </section>
   );
 }

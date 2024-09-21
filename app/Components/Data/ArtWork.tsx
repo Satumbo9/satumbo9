@@ -1,5 +1,3 @@
-// import { url } from "inspector";
-// import imgPlaceHolder from "../Assets/Img/placeHolder1.jpg";
 import img1 from "../Img/public/sa-1.jpg";
 import img2 from "../Img/public/sa-2.jpg";
 import img3 from "../Img/public/sa-3.jpg";
