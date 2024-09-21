@@ -3,6 +3,9 @@ import { EDUCATION_LIST } from "@/app/Components/Data/Education";
 // import Card from "@/app/Components/Util/Card";
 import CardItems from "@/app/Components/Util/CardItems";
 import Link from "next/link";
+import { GraduationCap, AudioLines } from "lucide-react";
+import React from "react";
+import { iconStyle } from "../../Util/IconsStyle";
 
 // { BACKGROUND_INFO.map((items)=>(d
 // { BACKGROUND_INFO.map((items)=>(
@@ -16,13 +19,15 @@ import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <section
-      id="ABOUT"
-      className="min-h-[100vh] sm:h-screen  flex flex-col items-center"
-    >
+    <section id="ABOUT" className="min-h-[100vh]  flex flex-col items-center">
       <div className="w-full flex flex-col items-center md:items-start">
-        <p className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 2xl:text-[3em]">
-          Hii <span>👋</span>
+        <p className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 2xl:text-[3em] items-center justify-center">
+          Hii{" "}
+          <span>
+            {React.createElement(AudioLines, {
+              style: iconStyle,
+            })}
+          </span>
         </p>
         <p className="md:w-[666px] 2xl:w-[800px] 2xl:text-[1em] text-center md:text-left">
           Edimarf Satumbo is an Angolan-born professional who has a deep passion
@@ -37,15 +42,27 @@ export default function AboutPage() {
           unique skill set, allowing him to navigate both industries with ease.
           Throughout his journey, Edimarf has lived in various places, including
           Miami and Arizona, where he embraced a nomadic lifestyle, often
-          finding accommodation with existing community members.
+          finding accommodation with existing community members. His
+          adaptability and drive to connect with diverse cultures and
+          professionals reflect his open-minded and forward-thinking approach to
+          life. With his diverse academic background and hands-on experience,
+          Edimarf continues to explore opportunities in web development while
+          maintaining a strong focus on business ventures. He remains committed
+          to personal growth and is always looking for new ways to combine his
+          two passions.
         </p>
       </div>
       <div
         className="mt-[5em] 2xl:mt-[2em] md:mt-[6em] w-full  
       flex items-center justify-center flex-col text-center"
       >
-        <p className="font-bold text-[2em] md:text-[3em] flex gap-2 2xl:text-[3em]">
-          Education <span>📚</span>
+        <p className="font-bold text-[2em] md:text-[3em] flex gap-2 2xl:text-[3em] items-center justify-center">
+          Education{" "}
+          <span>
+            {React.createElement(GraduationCap, {
+              style: iconStyle,
+            })}
+          </span>
         </p>
 
         <div

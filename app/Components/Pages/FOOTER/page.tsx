@@ -3,13 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Youtube, Linkedin } from "lucide-react";
 import React from "react";
+import { iconStyle } from "../../Util/IconsStyle";
 export default function Footer() {
-  const ICON_SIZE = "35px";
-
-  const iconStyle = {
-    width: ICON_SIZE,
-    height: ICON_SIZE,
-  };
+  iconStyle;
   return (
     <section className="h-[25vh]  bg-[#FFFF4E]  flex justify-center items-center text-gray-600 p-4">
       <div

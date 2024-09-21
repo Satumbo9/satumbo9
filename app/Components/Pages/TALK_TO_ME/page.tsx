@@ -10,7 +10,7 @@ export default function Talk_To_ME() {
   return (
     <section
       id="TALK"
-      className="min-h-[100vh] max:h-[150v] sm:h-screen p-5 flex   flex-col items-center justify-center"
+      className="min-h-[120vh] md:h-[100vh] sm:h-screen p-5 flex   flex-col items-center "
     >
       <div
         className="

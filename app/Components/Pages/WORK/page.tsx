@@ -2,16 +2,24 @@
 // import Image from "next/image";
 import CardItems from "../../Util/CardItems";
 import { PROFESSIONAL_CAREER } from "@/app/Components/Data/Profession";
+import { Computer } from "lucide-react";
+import React from "react";
+import { iconStyle } from "../../Util/IconsStyle";
 
 export default function WorkPage() {
   return (
     <section
       id="WORK"
-      className="sm:min-h-[100vh] max:h-[150vh] sm:h-screen flex items-center justify-center text-center "
+      className="min-h-[140vh] md:h-[100vh] max:h-[150vh] sm:h-screen flex items-center justify-center text-center "
     >
       <div className="text-center flex flex-col items-center ">
-        <p className="text-[2em] md:text-[3em] font-bold flex gap-2 2xl:text-[3em] mt-5">
-          Background <span>👨🏾‍💻</span>
+        <p className="text-[2em] md:text-[3em] font-bold flex gap-2 2xl:text-[3em] mt-5 items-center justify-center">
+          Background{" "}
+          <span>
+            {React.createElement(Computer, {
+              style: iconStyle,
+            })}
+          </span>
         </p>
 
         <div className="flex flex-col mt-10 md:flex-row text-[1em] md:text-[1.3em] gap-2">
