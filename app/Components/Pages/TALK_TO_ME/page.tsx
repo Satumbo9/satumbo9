@@ -20,8 +20,8 @@ export default function Talk_To_ME() {
       </div>
 
       <FormData name="talk to me">
-        <InputForm id="name" type="text" label="Name" />
-        <InputForm id="email" label="Email" />
+        <InputForm id="name" type="text" label="Name" placeholder="ig. Ruth" />
+        <InputForm id="email" label="Email" placeholder="ruth@myemail.com" />
 
         <ButtonForm label="Submit" type="button" />
       </FormData>
