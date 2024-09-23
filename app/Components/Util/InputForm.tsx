@@ -1,20 +1,23 @@
+import React from "react";
 
-
-
-
-
+interface InputComponentProps
+  extends React.InputHTMLAttributes<HTMLInputElement> {
+  label: string;
+  id: string;
+}
 
 //Reuseable Input
-export const InputForm = ({name, id, type, label, placeHolder, labelClass, inputClass, className}:
-    {name?:string, id?:string, type?:string, label?:string, placeHolder?:string, labelClass?:string, inputClass?:string, className?:string})=>{
-
-
-    return(
-        <div className={className}>
-            <label htmlFor={name} className={`${labelClass}`}> 
-                <p>{label}</p>
-            </label>
-            <input type={type} name={name} id={id} placeholder={placeHolder} className={`${inputClass}`} />
-        </div>
-    )
-}
+export const InputForm: React.FC<InputComponentProps> = ({
+  label,
+  id,
+  ...props
+}) => {
+  return (
+    <div className="flex flex-col">
+      <label htmlFor={id} className="text-[1.40em]">
+        {label}
+      </label>
+      <input id={id} {...props} className="h-[30px] p-4 text-black" />
+    </div>
+  );
+};

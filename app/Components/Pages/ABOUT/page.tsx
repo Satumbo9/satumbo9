@@ -20,15 +20,15 @@ import { iconStyle } from "../../Util/IconsStyle";
 export default function AboutPage() {
   return (
     <section id="ABOUT" className="min-h-[100vh]  flex flex-col items-center">
-      <div className="w-full flex flex-col items-center md:items-start">
-        <p className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 2xl:text-[3em] items-center justify-center">
+      <div className="w-full flex flex-col items-center md:items-start mt-20">
+        <span className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 2xl:text-[3em] items-center justify-center">
           Hii{" "}
-          <span>
+          <p>
             {React.createElement(AudioLines, {
               style: iconStyle,
             })}
-          </span>
-        </p>
+          </p>
+        </span>
         <p className="md:w-[666px] 2xl:w-[800px] 2xl:text-[1em] text-center md:text-left">
           Edimarf Satumbo is an Angolan-born professional who has a deep passion
           for both technology and business. In 2015, Edimarf moved to Budapest
@@ -56,14 +56,14 @@ export default function AboutPage() {
         className="mt-[5em] 2xl:mt-[2em] md:mt-[6em] w-full  
       flex items-center justify-center flex-col text-center"
       >
-        <p className="font-bold text-[2em] md:text-[3em] flex gap-2 2xl:text-[3em] items-center justify-center">
+        <span className="font-bold text-[2em] md:text-[3em] flex gap-2 2xl:text-[3em] items-center justify-center">
           Education{" "}
-          <span>
+          <p>
             {React.createElement(GraduationCap, {
               style: iconStyle,
             })}
-          </span>
-        </p>
+          </p>
+        </span>
 
         <div
           className="flex flex-col md:flex md:flex-row 2xl:text-[1em] gap-2

@@ -10,17 +10,17 @@ export default function WorkPage() {
   return (
     <section
       id="WORK"
-      className="min-h-[140vh] md:h-[100vh] max:h-[150vh] sm:h-screen flex items-center justify-center text-center "
+      className="min-h-[140vh] md:h-[100vh] max:h-[150vh] sm:h-screen flex  justify-center text-center "
     >
-      <div className="text-center flex flex-col items-center ">
-        <p className="text-[2em] md:text-[3em] font-bold flex gap-2 2xl:text-[3em] mt-5 items-center justify-center">
+      <div className="text-center flex flex-col items-center mt-28">
+        <span className="text-[2em] md:text-[3em] font-bold flex gap-2 2xl:text-[3em] mt-5 items-center justify-center">
           Background{" "}
-          <span>
+          <p>
             {React.createElement(Computer, {
               style: iconStyle,
             })}
-          </span>
-        </p>
+          </p>
+        </span>
 
         <div className="flex flex-col mt-10 md:flex-row text-[1em] md:text-[1.3em] gap-2">
           {PROFESSIONAL_CAREER.map((items) => (
@@ -32,7 +32,7 @@ export default function WorkPage() {
             />
           ))}
         </div>
-        <p className="p-5 md:w-[600px] 2xl:w-[800px]  mt-30 mb-10 h-[200px] text-10 2xl:text-[1em]">
+        <span className="p-5 md:w-[600px] 2xl:w-[800px]  mt-30 mb-10 h-[200px] text-10 2xl:text-[1em]">
           I was a supply chain professional at{" "}
           <span className="font-bold text-[1.210em]">ExxonMobil</span> for over
           a year, specializing in SAP and logistics, where I optimized processes
@@ -43,7 +43,7 @@ export default function WorkPage() {
           user experiences. My passion lies in merging technology and creativity
           to drive impactful projects and overcome challenges in the tech
           landscape.
-        </p>
+        </span>
       </div>
     </section>
   );
