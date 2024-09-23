@@ -10,8 +10,10 @@ export const FormData: React.FC<FormComponentProps> = ({
   ...props
 }) => {
   return (
+    <div>
     <form name={name} {...props} className="w-[200px] md:w-[400px] grid gap-10">
       {children}
     </form>
+    </div>
   );
 };

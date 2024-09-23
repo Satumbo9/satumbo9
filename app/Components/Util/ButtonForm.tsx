@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes } from "react";
+import React from "react";
 
 interface ButtonForm extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
@@ -6,11 +6,13 @@ interface ButtonForm extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const ButtonForm: React.FC<ButtonForm> = ({ label, ...props }) => {
   return (
+
     <button
       {...props}
       className="text-[1.40em] bg-[yellow] text-gray-600 p-4 font-bold"
     >
       {label}
     </button>
+
   );
 };

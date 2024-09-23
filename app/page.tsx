@@ -8,10 +8,10 @@ import FOOTER from "@/app/Components/Pages/FOOTER/page";
 export default function Home() {
   return (
     <>
-      <NAV />
+      {/* <NAV />
       <HomePage />
       <ABOUT />
-      <WORK />
+      <WORK /> */}
       <TALK />
       <FOOTER />
     </>
