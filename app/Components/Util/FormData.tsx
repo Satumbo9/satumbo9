@@ -45,6 +45,7 @@ export default function FormData() {
       <span className="text-center font-bold text-[5em]">Let's talk</span>
       <Form onSubmit={handleSubmit(onSubmit)} name="talk-to-me">
         {/* <div className="h-[150px] "> */}
+
         <InputForm
           label="Name"
           type="text"
@@ -56,6 +57,31 @@ export default function FormData() {
           <p className="text-[yellow] text-[0.80em]">{errors.name.message}</p>
         )}
 
+
+
+        <InputForm
+          label="Email"
+          type="text"
+          placeholder="maria@example.com"
+          id="email"
+          {...register("email")}
+        /> 
+                {errors.email && (
+          <p className="text-[yellow] text-[0.80em]">{errors.email.message}</p>
+        )}
+
+        <ButtonForm label="submit" type="submit" />
+
+      </Form>
+    </div>
+  );
+}
+
+
+
+
+//Necessary 
+
         {/* <input
           className="text-[black]"
           type="text"
@@ -66,19 +92,3 @@ export default function FormData() {
         {errors.name && (
           <p className="text-[yellow] text-[0.80em]">{errors.name.message}</p>
         )} */}
-
-        <InputForm
-          label="Email"
-          type="text"
-          placeholder="maria@example.com"
-          id="email"
-          {...register("email")}
-        />
-        <ButtonForm label="submit" type="submit" />
-        {errors.email && (
-          <p className="text-[yellow] text-[0.80em]">{errors.email.message}</p>
-        )}
-      </Form>
-    </div>
-  );
-}

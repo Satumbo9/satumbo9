@@ -14,18 +14,3 @@ export default function SendMeAnEmail() {
   );
 }
 
-// <div
-//   className="
-// text-[1em] text-center flex flex-col items-center mt-36"
-// >
-//   <p className="text-[2em] font-bold flex gap-2 2xl:text-[3em]">
-//     Talk to me 💬
-//   </p>
-// </div>
-
-// <Form name="talk to me">
-//   <InputForm id="name" type="text" label="Name" placeholder="ig. Ruth" />
-//   <InputForm id="email" label="Email" placeholder="ruth@myemail.com" />
-
-//   <ButtonForm label="Submit" type="button" />
-// </Form>
