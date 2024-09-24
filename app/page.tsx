@@ -7,12 +7,21 @@ import FOOTER from "@/app/Components/Pages/FOOTER/page";
 
 export default function Home() {
   return (
+<<<<<<< HEAD
     <main>
       <NAV />
       <HomePage />
       <ABOUT />
       <WORK />
       <SEND_ME_EMAIL />
+=======
+    <>
+      {/* <NAV />
+      <HomePage />
+      <ABOUT />
+      <WORK /> */}
+      <TALK />
+>>>>>>> 7f8a475ea58ed270aa0556edbf9cc5f88d7a2284
       <FOOTER />
     </main>
   );
