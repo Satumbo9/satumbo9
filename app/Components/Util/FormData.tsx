@@ -41,7 +41,6 @@ export default function FormData() {
   } = form;
 
   return (
-<<<<<<< HEAD
     <div className="flex flex-col items-center">
       <span className="text-center font-bold text-[5em]">Let's talk</span>
       <Form onSubmit={handleSubmit(onSubmit)} name="talk-to-me">
@@ -80,12 +79,6 @@ export default function FormData() {
           <p className="text-[yellow] text-[0.80em]">{errors.email.message}</p>
         )}
       </Form>
-=======
-    <div>
-    <form name={name} {...props} className="w-[200px] md:w-[400px] grid gap-10">
-      {children}
-    </form>
->>>>>>> 7f8a475ea58ed270aa0556edbf9cc5f88d7a2284
     </div>
   );
 }
