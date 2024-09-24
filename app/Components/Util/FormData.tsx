@@ -8,6 +8,10 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 
+
+//Message
+const formHeaderMessage = "SHOOT A MESSAGE";
+
 //Zod validation
 const FormValueSchema = z.object({
   name: z.string().min(6, "name invalid"),
@@ -41,9 +45,10 @@ export default function FormData() {
   } = form;
 
   return (
-    <div className="flex flex-col items-center">
-      <span className="text-center font-bold text-[5em]">Let's talk</span>
-      <Form onSubmit={handleSubmit(onSubmit)} name="talk-to-me">
+    <div 
+    className="flex flex-col  items-center ">
+      <span className="font-bold text-[1.80em] mt-4 text-center md:text-[4.50em] mb-10">{formHeaderMessage}</span>
+      <Form onSubmit={handleSubmit(onSubmit)} name="talk-to-me" className="">
         {/* <div className="h-[150px] "> */}
 
         <InputForm
@@ -54,7 +59,7 @@ export default function FormData() {
           {...register("name")}
         />
         {errors.name && (
-          <p className="text-[yellow] text-[0.80em]">{errors.name.message}</p>
+          <p className="text-[yellow] text-[0.80em] ">{errors.name.message}</p>
         )}
 
 
