@@ -10,9 +10,9 @@ export default function WorkPage() {
   return (
     <section
       id="WORK"
-      className="min-h-[100vh]  max:h-[150vh] sm:h-screen flex  justify-center text-center text-[yellow]"
+      className="flex justify-center items-center text-center text-[yellow]"
     >
-      <div className="text-center flex flex-col items-center mt-28">
+      <div className="text-center flex flex-col items-center">
         <span className="text-[2em] md:text-[2.20em] font-bold flex gap-2  2xl:text-[2.50em] mt-5 items-center justify-center">
           BACKGROUND
         </span>
@@ -27,9 +27,10 @@ export default function WorkPage() {
             />
           ))}
         </div>
-        <span className="p-5 md:w-[600px] 2xl:w-[800px]  mt-30 mb-10 h-[200px] text-10 2xl:text-[1em]">
-          I was a supply chain professional at{" "}
-          <span className="font-bold text-[1.210em]">ExxonMobil</span> for over
+        <span className="p-5 md:w-[600px] 2xl:w-[800px] mt-30 mb-10 text-10 2xl:text-[1em] h-fit">
+          <p> 
+          I was a supply chain professional at ExxonMobil
+          for over
           a year, specializing in SAP and logistics, where I optimized processes
           and improved efficiency. I founded Uajiza, my tech company, focusing
           on game development and innovative tech solutions that challenge the
@@ -38,6 +39,7 @@ export default function WorkPage() {
           user experiences. My passion lies in merging technology and creativity
           to drive impactful projects and overcome challenges in the tech
           landscape.
+          </p> 
         </span>
       </div>
     </section>

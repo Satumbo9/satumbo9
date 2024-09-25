@@ -21,7 +21,7 @@ export default function AboutPage() {
   return (
     <section
       id="ABOUT"
-      className="min-h-[100vh]  flex flex-col items-center text-[yellow]"
+      className="flex flex-col items-center text-[yellow]"
     >
       <div className="w-full flex flex-col items-center md:items-start mt-10">
         <span className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 2xl:text-[3em] items-center justify-center">
@@ -55,7 +55,7 @@ export default function AboutPage() {
         </p>
       </div>
       <div
-        className="mt-[5em] 2xl:mt-[2em] md:mt-[6em] w-full  
+        className="2xl:mt-[2em] md:mt-[6em] w-full  
       flex items-center justify-center flex-col text-center"
       >
         <span className="font-bold text-[2em] md:text-[2.20em] flex gap-2 2xl:text-[2.50em] items-center justify-center">
