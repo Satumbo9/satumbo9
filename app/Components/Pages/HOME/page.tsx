@@ -10,13 +10,6 @@ import React from "react";
 import { HOME_ICON_SIZE } from "../../Util/IconsStyle";
 // import EmailForm from "../EMAIL-FORM/page";
 
-const handleHireMe = () => {
-  console.log("Hire me!!!");
-};
-
-const handleResume = () => {
-  console.log("Hire Resumeee!!!");
-};
 export default function HomePage() {
   return (
     <section
@@ -35,29 +28,12 @@ export default function HomePage() {
       <div
         // className="text-[1.5em]  text-center md:text-[1.5em] md:w-[666px] md:h-[68px] md:text-center "
 
-        className="text-[1em] md:text-[1.40em] 2xl:text-[1.70em] p-2 text-center w-[20.10em] md:w-[30.25em]"
+        className="text-[1em] md:text-[1.40em] 2xl:text-[1.70em] p-2 text-center w-[20.10em] md:w-[30.25em] font-bold text-[yellow]"
       >
         <p>
           Edimarf Satumbo was born in the 90s and still alive making amazing art
           and web projects
         </p>
-
-        <div className="flex flex-col gap-2 md:flex-row items-center justify-center mt-5">
-          <ButtonPage Onclick={handleHireMe} type="button">
-            {/* <p className=" text-[1.20em]">Hire-me</p> */}
-            {React.createElement(Briefcase, {
-              style: HOME_ICON_SIZE,
-            })}
-          </ButtonPage>
-
-          <ButtonPage Onclick={handleResume} type="button">
-            {/* <p className=" text-[1.20em]">Resume</p> */}
-            {React.createElement(Download, {
-              style: HOME_ICON_SIZE,
-              // cursor: "Pointer",
-            })}
-          </ButtonPage>
-        </div>
       </div>
     </section>
   );

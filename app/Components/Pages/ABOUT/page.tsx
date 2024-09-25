@@ -3,7 +3,7 @@ import { EDUCATION_LIST } from "@/app/Components/Data/Education";
 // import Card from "@/app/Components/Util/Card";
 import CardItems from "@/app/Components/Util/CardItems";
 import Link from "next/link";
-import { GraduationCap, AudioLines } from "lucide-react";
+import { GraduationCap, AudioLines, VolumeX } from "lucide-react";
 import React from "react";
 import { GENERAL_ICON_PAGE } from "../../Util/IconsStyle";
 
@@ -26,7 +26,7 @@ export default function AboutPage() {
       <div className="w-full flex flex-col items-center md:items-start mt-20">
         <span className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 2xl:text-[3em] items-center justify-center">
           <p className="mb-10">
-            {React.createElement(AudioLines, {
+            {React.createElement(VolumeX, {
               style: GENERAL_ICON_PAGE,
             })}
           </p>
