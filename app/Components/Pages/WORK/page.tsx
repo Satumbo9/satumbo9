@@ -10,7 +10,7 @@ export default function WorkPage() {
   return (
     <section
       id="WORK"
-      className="min-h-[140vh] md:h-[100vh] max:h-[150vh] sm:h-screen flex  justify-center text-center "
+      className="min-h-[140vh] md:h-[100vh] max:h-[150vh] sm:h-screen flex  justify-center text-center text-[yellow]"
     >
       <div className="text-center flex flex-col items-center mt-28">
         <span className="text-[2em] md:text-[3em] font-bold flex gap-2 2xl:text-[3em] mt-5 items-center justify-center">

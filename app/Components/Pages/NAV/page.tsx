@@ -9,7 +9,7 @@ export default function Nav() {
     <header>
       <div
         // className="h-[8vh]  mb-10 md:h-[8vh] md:flex md:justify-between md:text-[2em] md:pt-[30px] md:mb-10"
-        className="hidden lg:flex lg:items-center lg:justify-between md:text-[1.3em] 2xl:text-[2em]  lg:font-bold  "
+        className="hidden lg:flex lg:items-center lg:justify-between md:text-[1.3em] 2xl:text-[2em]  lg:font-bold  text-[yellow]"
       >
         <div className="md:p-5">
           <Link

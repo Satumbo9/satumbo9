@@ -24,7 +24,7 @@
 }
 
 body {
-  color: var(--Color-yellow);
+  /* color: var(--Color-yellow); */
   background: var(--Background-secondary);
   font-family: Arial, Helvetica, sans-serif;
 }

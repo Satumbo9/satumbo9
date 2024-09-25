@@ -19,7 +19,10 @@ import { GENERAL_ICON_PAGE } from "../../Util/IconsStyle";
 
 export default function AboutPage() {
   return (
-    <section id="ABOUT" className="min-h-[100vh]  flex flex-col items-center">
+    <section
+      id="ABOUT"
+      className="min-h-[100vh]  flex flex-col items-center text-[yellow]"
+    >
       <div className="w-full flex flex-col items-center md:items-start mt-20">
         <span className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 2xl:text-[3em] items-center justify-center">
           <p className="mb-10">
