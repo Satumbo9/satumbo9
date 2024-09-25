@@ -4,10 +4,10 @@
 // import { EDUCATION_LIST } from "@/app/Components/Data/Education";
 import Image from "next/image";
 import satumboLogo from "../../Img/logo/satumbo9-logo.png";
-import { ButtonPage } from "../../Util/Button";
-import { Download, Briefcase, Pointer } from "lucide-react";
+// import { ButtonPage } from "../../Util/Button";
+// import { Download, Briefcase, Pointer } from "lucide-react";
 import React from "react";
-import { HOME_ICON_SIZE } from "../../Util/IconsStyle";
+// import { HOME_ICON_SIZE } from "../../Util/IconsStyle";
 // import EmailForm from "../EMAIL-FORM/page";
 
 export default function HomePage() {

@@ -2,9 +2,9 @@
 // import Image from "next/image";
 import CardItems from "../../Util/CardItems";
 import { PROFESSIONAL_CAREER } from "@/app/Components/Data/Profession";
-import { Computer } from "lucide-react";
+// import { Computer } from "lucide-react";
 import React from "react";
-import { GENERAL_ICON_PAGE } from "../../Util/IconsStyle";
+// import { GENERAL_ICON_PAGE } from "../../Util/IconsStyle";
 
 export default function WorkPage() {
   return (

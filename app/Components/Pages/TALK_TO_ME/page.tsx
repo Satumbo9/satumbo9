@@ -1,17 +1,19 @@
 "use client";
 
-import { Form } from "../../Util/Form";
-import { InputForm } from "../../Util/InputForm";
-import { ButtonForm } from "../../Util/ButtonForm";
+// import { Form } from "../../Util/Form";
+// import { InputForm } from "../../Util/InputForm";
+// import { ButtonForm } from "../../Util/ButtonForm";
 import FormData from "../../Util/FormData";
 import { ButtonPage } from "../../Util/Button";
-import { Download, Briefcase, Pointer } from "lucide-react";
+import { Download, Briefcase } from "lucide-react";
 import { HOME_ICON_SIZE } from "../../Util/IconsStyle";
 import React from "react";
 
 
 
-const BACKGROUND_BLACK = "bg-[#191616]";
+// const BACKGROUND_BLACK = "bg-[#191616]";
+
+
 const handleHireMe = () => {
   console.log("Hire me!!!");
 };

@@ -34,6 +34,7 @@ export default function FormData() {
   const onSubmit: SubmitHandler<FormDataType> = (data) => {
     console.log("Working!!!", data.name, data.email);
     setLogged(true);
+    if(Logged === true) return console.log("Logged");
 
     form.reset();
   };

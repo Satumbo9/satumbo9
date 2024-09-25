@@ -3,7 +3,7 @@ import { EDUCATION_LIST } from "@/app/Components/Data/Education";
 // import Card from "@/app/Components/Util/Card";
 import CardItems from "@/app/Components/Util/CardItems";
 import Link from "next/link";
-import { GraduationCap, AudioLines, VolumeX } from "lucide-react";
+import { VolumeX } from "lucide-react";
 import React from "react";
 import { GENERAL_ICON_PAGE } from "../../Util/IconsStyle";
 

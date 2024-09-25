@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Youtube, Linkedin } from "lucide-react";
 import React from "react";
-import { iconStyle } from "../../Util/IconsStyle";
+import { FOOTER_ICON_SIZE } from "../../Util/IconsStyle";
 export default function Footer() {
 
   return (
@@ -49,12 +49,12 @@ export default function Footer() {
           >
             <Link target="_blank" href="https://www.instagram.com/satumbo9/">
               {React.createElement(Instagram, {
-                style: iconStyle,
+                style: FOOTER_ICON_SIZE,
               })}
             </Link>
             <Link target="_blank" href="https://www.youtube.com/@Satumbo9Hub">
               {React.createElement(Youtube, {
-                style: iconStyle,
+                style: FOOTER_ICON_SIZE,
               })}
             </Link>
             <Link
@@ -62,7 +62,7 @@ export default function Footer() {
               href="https://www.linkedin.com/in/edimarf-satumbo-96b725143/"
             >
               {React.createElement(Linkedin, {
-                style: iconStyle,
+                style: FOOTER_ICON_SIZE,
               })}
             </Link>
           </div>
