@@ -13,8 +13,8 @@ const formHeaderMessage = "SHOOT A MESSAGE";
 
 //Zod validation
 const FormValueSchema = z.object({
-  name: z.string().min(6, "name invalid"),
-  email: z.string().min(6, "email invalid"),
+  name: z.string().min(2, "name invalid"),
+  email: z.string().min(6, "email invalid").email("email invalid"),
 });
 
 type FormDataType = z.infer<typeof FormValueSchema>;
@@ -34,6 +34,8 @@ export default function FormData() {
   const onSubmit: SubmitHandler<FormDataType> = (data) => {
     console.log("Working!!!", data.name, data.email);
     setLogged(true);
+
+    form.reset();
   };
 
   //Destructuring Form to get individual props
@@ -42,7 +44,11 @@ export default function FormData() {
     handleSubmit,
     formState: { errors },
   } = form;
-  const ERROR_CHECKER = errors.email && (
+  const ERROR_CHECKER_NAME = errors.name && (
+    <p className="text-[red] text-[1.20em]">{errors.name.message}</p>
+  );
+
+  const ERROR_CHECKER_EMAIL = errors.email && (
     <p className="text-[red] text-[1.20em]">{errors.email.message}</p>
   );
   return (
@@ -60,7 +66,7 @@ export default function FormData() {
             id="name"
             {...register("name")}
           />
-          {ERROR_CHECKER}
+          {ERROR_CHECKER_NAME}
         </div>
         <div className="h-[100px] mb-2">
           <InputForm
@@ -70,7 +76,7 @@ export default function FormData() {
             id="email"
             {...register("email")}
           />
-          {ERROR_CHECKER}
+          {ERROR_CHECKER_EMAIL}
         </div>
 
         <ButtonForm

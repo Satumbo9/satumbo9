@@ -7,7 +7,7 @@ export default function SendMeAnEmail() {
   return (
     <section
       id="TALK"
-      className="min-h-[120vh] md:h-[100vh] sm:h-screen  items-center justify-center  bg-[#131111] text-[yellow]"
+      className="min-h-[100vh] md:h-[100vh] sm:h-screen  items-center justify-center  bg-[#191616] text-[yellow]"
     >
       <FormData />
     </section>
