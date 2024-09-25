@@ -1,5 +1,5 @@
 const GENERAL_ICONS_PAGE = "40px";
-const HOME_ICONS_SIZE = "40px";
+const HOME_ICONS_SIZE = "25px";
 const FOOTER_ICONS_SIZE = "30px";
 
 export const FOOTER_ICON_SIZE = {

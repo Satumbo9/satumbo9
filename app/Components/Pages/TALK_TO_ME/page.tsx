@@ -9,6 +9,9 @@ import { Download, Briefcase, Pointer } from "lucide-react";
 import { HOME_ICON_SIZE } from "../../Util/IconsStyle";
 import React from "react";
 
+
+
+const BACKGROUND_BLACK = "bg-[#191616]";
 const handleHireMe = () => {
   console.log("Hire me!!!");
 };
@@ -21,7 +24,7 @@ export default function SendMeAnEmail() {
   return (
     <section
       id="TALK"
-      className="min-h-[100vh] md:h-[100vh] sm:h-screen  items-center justify-center  bg-[#191616] text-[yellow]"
+      className="min-h-[100vh] md:h-[100vh] sm:h-screen  items-center justify-center text-[yellow]"
     >
       <FormData />
 
@@ -32,7 +35,6 @@ export default function SendMeAnEmail() {
             style: HOME_ICON_SIZE,
           })}
         </ButtonPage>
-
         <ButtonPage Onclick={handleResume} type="button">
           <p className=" text-[1.20em]">Resume</p>
           {React.createElement(Download, {

@@ -28,7 +28,7 @@ export default function HomePage() {
       <div
         // className="text-[1.5em]  text-center md:text-[1.5em] md:w-[666px] md:h-[68px] md:text-center "
 
-        className="text-[1em] md:text-[1.40em] 2xl:text-[1.70em] p-2 text-center w-[20.10em] md:w-[30.25em] font-bold text-[yellow]"
+        className="text-[1em] md:text-[1.40em] 2xl:text-[1.70em] p-2 text-center w-[20.10em] md:w-[30.25em]  text-[yellow]"
       >
         <p>
           Edimarf Satumbo was born in the 90s and still alive making amazing art

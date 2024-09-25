@@ -13,16 +13,11 @@ export default function WorkPage() {
       className="min-h-[140vh] md:h-[100vh] max:h-[150vh] sm:h-screen flex  justify-center text-center text-[yellow]"
     >
       <div className="text-center flex flex-col items-center mt-28">
-        <span className="text-[2em] md:text-[3em] font-bold flex gap-2 2xl:text-[3em] mt-5 items-center justify-center">
-          Background{" "}
-          <p>
-            {React.createElement(Computer, {
-              style: GENERAL_ICON_PAGE,
-            })}
-          </p>
+        <span className="text-[2em] md:text-[2.20em] font-bold flex gap-2  2xl:text-[2.50em] mt-5 items-center justify-center">
+          BACKGROUND
         </span>
 
-        <div className="flex flex-col mt-10 md:flex-row text-[1em] md:text-[1.3em] gap-2">
+        <div className="flex flex-col mt-4 md:flex-row text-[1em] md:text-[1.3em] gap-2">
           {PROFESSIONAL_CAREER.map((items) => (
             <CardItems
               key={items.id}

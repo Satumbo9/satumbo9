@@ -53,7 +53,7 @@ export default function FormData() {
   );
   return (
     <div className="flex flex-col  items-center ">
-      <span className="font-bold text-[1.80em] md:text-[2.90em] mt-4 text-center  mb-20">
+      <span className="font-bold text-[1.80em] md:text-[2.90em] mt-4 text-center  mb-10">
         {formHeaderMessage}
       </span>
       <Form className="" onSubmit={handleSubmit(onSubmit)} name="talk-to-me">

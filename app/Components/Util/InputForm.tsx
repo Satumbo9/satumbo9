@@ -13,7 +13,7 @@ export const InputForm = forwardRef<HTMLInputElement, InputComponentProps>(
       <div className="flex flex-col">
         <label
           htmlFor={id}
-          className="text-[1.40em] mb-4 md:text[2em] xl:text-[2em]"
+          className="text-[1.40em] mb-4 md:text[1em] "
         >
           {label}
         </label>

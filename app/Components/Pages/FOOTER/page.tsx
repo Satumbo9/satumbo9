@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
         </div>
         <div className=" hidden md:flex md:flex-col p-4 text-center">
-          <p className="font-bold text-[1.4em] 2xl:text-[1.20em] ">Contact</p>
+          <p className="font-bold text-[1.4em] 2xl:text-[1.20em] ">CONTACT</p>
           <div className="flex flex-col text-center w-[200px] 2xl:text-[1.50em]">
             <Link href="#">hello@satumbo.com</Link>
             <Link href="#">+36309917135</Link>
