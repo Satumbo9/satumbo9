@@ -8,7 +8,6 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 
-
 //Message
 const formHeaderMessage = "SHOOT A MESSAGE";
 
@@ -43,51 +42,51 @@ export default function FormData() {
     handleSubmit,
     formState: { errors },
   } = form;
-
+  const ERROR_CHECKER = errors.email && (
+    <p className="text-[red] text-[1.20em]">{errors.email.message}</p>
+  );
   return (
-    <div 
-    className="flex flex-col  items-center ">
-      <span className="font-bold text-[1.80em] mt-4 text-center md:text-[4.50em] mb-10">{formHeaderMessage}</span>
-      <Form onSubmit={handleSubmit(onSubmit)} name="talk-to-me" className="">
+    <div className="flex flex-col  items-center ">
+      <span className="font-bold text-[1.80em] md:text-[2.90em] mt-4 text-center  mb-20">
+        {formHeaderMessage}
+      </span>
+      <Form className="" onSubmit={handleSubmit(onSubmit)} name="talk-to-me">
         {/* <div className="h-[150px] "> */}
+        <div className="h-[100px] mb-2">
+          <InputForm
+            label="Name"
+            type="text"
+            placeholder="Maria"
+            id="name"
+            {...register("name")}
+          />
+          {ERROR_CHECKER}
+        </div>
+        <div className="h-[100px] mb-2">
+          <InputForm
+            label="Email"
+            type="text"
+            placeholder="maria@example.com"
+            id="email"
+            {...register("email")}
+          />
+          {ERROR_CHECKER}
+        </div>
 
-        <InputForm
-          label="Name"
-          type="text"
-          placeholder="Maria"
-          id="name"
-          {...register("name")}
+        <ButtonForm
+          className="hover:bg-gray-200"
+          label="submit"
+          type="submit"
         />
-        {errors.name && (
-          <p className="text-[yellow] text-[0.80em] ">{errors.name.message}</p>
-        )}
-
-
-
-        <InputForm
-          label="Email"
-          type="text"
-          placeholder="maria@example.com"
-          id="email"
-          {...register("email")}
-        /> 
-                {errors.email && (
-          <p className="text-[yellow] text-[0.80em]">{errors.email.message}</p>
-        )}
-
-        <ButtonForm label="submit" type="submit" />
-
       </Form>
     </div>
   );
 }
 
+//Necessary
 
-
-
-//Necessary 
-
-        {/* <input
+{
+  /* <input
           className="text-[black]"
           type="text"
           placeholder="Maria"
@@ -96,4 +95,5 @@ export default function FormData() {
         />
         {errors.name && (
           <p className="text-[yellow] text-[0.80em]">{errors.name.message}</p>
-        )} */}
+        )} */
+}

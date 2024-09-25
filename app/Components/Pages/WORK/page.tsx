@@ -4,7 +4,7 @@ import CardItems from "../../Util/CardItems";
 import { PROFESSIONAL_CAREER } from "@/app/Components/Data/Profession";
 import { Computer } from "lucide-react";
 import React from "react";
-import { iconStyle } from "../../Util/IconsStyle";
+import { GENERAL_ICON_PAGE } from "../../Util/IconsStyle";
 
 export default function WorkPage() {
   return (
@@ -17,7 +17,7 @@ export default function WorkPage() {
           Background{" "}
           <p>
             {React.createElement(Computer, {
-              style: iconStyle,
+              style: GENERAL_ICON_PAGE,
             })}
           </p>
         </span>

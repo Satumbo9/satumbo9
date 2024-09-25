@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { HOVER_COLOR_WEBSITE } from "../../Const/constValues";
 
 // This the navigation Section
 
@@ -12,7 +13,7 @@ export default function Nav() {
       >
         <div className="md:p-5">
           <Link
-            className="flex gap-[0.40em] hover:text-[--page-links] "
+            className={`flex gap-[0.40em] ${HOVER_COLOR_WEBSITE}`}
             href={"#Home"}
           >
             <p>Satumbo9</p>
@@ -23,18 +24,18 @@ export default function Nav() {
           <ul
             // className="xl:flex xl:gap-[10em] xl:items-center"
 
-            className="flex gap-[10em] items-center"
+            className="flex gap-[10em] items-center "
           >
-            <li className="hover:text-[--page-links]">
+            <li className={`${HOVER_COLOR_WEBSITE}`}>
               <Link href={"#ABOUT"}>about</Link>
             </li>
-            <li className="hover:text-[--page-links]">
+            <li className={`${HOVER_COLOR_WEBSITE}`}>
               <Link className="flex flex-col text-center" href={"#WORK"}>
                 <p>work</p>
                 <p className="text-[16px]">2018-2024</p>
               </Link>
             </li>
-            <li className="hover:text-[--page-links]">
+            <li className={`${HOVER_COLOR_WEBSITE}`}>
               <Link href={"#TALK"}>talk to me</Link>
             </li>
           </ul>

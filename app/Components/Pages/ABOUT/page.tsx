@@ -5,7 +5,7 @@ import CardItems from "@/app/Components/Util/CardItems";
 import Link from "next/link";
 import { GraduationCap, AudioLines } from "lucide-react";
 import React from "react";
-import { iconStyle } from "../../Util/IconsStyle";
+import { GENERAL_ICON_PAGE } from "../../Util/IconsStyle";
 
 // { BACKGROUND_INFO.map((items)=>(d
 // { BACKGROUND_INFO.map((items)=>(
@@ -22,10 +22,9 @@ export default function AboutPage() {
     <section id="ABOUT" className="min-h-[100vh]  flex flex-col items-center">
       <div className="w-full flex flex-col items-center md:items-start mt-20">
         <span className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 2xl:text-[3em] items-center justify-center">
-          Hii{" "}
-          <p>
+          <p className="mb-10">
             {React.createElement(AudioLines, {
-              style: iconStyle,
+              style: GENERAL_ICON_PAGE,
             })}
           </p>
         </span>
@@ -60,7 +59,7 @@ export default function AboutPage() {
           Education{" "}
           <p>
             {React.createElement(GraduationCap, {
-              style: iconStyle,
+              style: GENERAL_ICON_PAGE,
             })}
           </p>
         </span>
