@@ -6,16 +6,6 @@ interface InputComponentProps
   id: string;
 }
 
-{
-  /* <input
-  className="text-[black]"
-  type="text"
-  placeholder="Maria"
-  id="name"
-  {...register("name")}
-/>; */
-}
-
 //Reuseable Input
 export const InputForm: React.FC<InputComponentProps> = ({
   label,
@@ -27,7 +17,7 @@ export const InputForm: React.FC<InputComponentProps> = ({
       <label htmlFor={id} className="text-[1.40em]">
         {label}
       </label>
-      <input id={id} {...props} className="h-[30px] p-4 text-black" />
+      <input id={id} className="h-[30px] p-4 text-black" {...props} />
     </div>
   );
 };
