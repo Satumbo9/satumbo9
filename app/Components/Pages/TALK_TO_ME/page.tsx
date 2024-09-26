@@ -23,7 +23,7 @@ export default function SendMeAnEmail() {
   return (
     <section
       id="TALK"
-      className="min-h-[150vh]  sm:h-screen flex flex-col items-center justify-center bg-gray-900"
+      className="h-screen sm:h-screen flex flex-col items-center justify-center bg-gray-900"
     >
       <FormData />
 
