@@ -53,7 +53,7 @@ export default function FormData() {
     <p className="text-[red] text-[1.20em]">{errors.email.message}</p>
   );
   return (
-    <div className="flex flex-col  items-center ">
+    <div className="flex flex-col  items-center justify-center">
       <span className="font-bold text-[1.80em] md:text-[2.90em] mt-4 text-center  mb-4">
         {formHeaderMessage}
       </span>

@@ -23,11 +23,11 @@ export default function SendMeAnEmail() {
   return (
     <section
       id="TALK"
-      className="min-h-[150vh]  sm:h-screen  items-center justify-center "
+      className="min-h-[150vh]  sm:h-screen flex flex-col items-center justify-center bg-gray-900"
     >
       <FormData />
 
-      <div className="flex flex-col gap-2 md:flex-row items-center justify-center mt-10">
+      <div className="flex flex-col gap-2 md:flex-row items-center justify-center mt-10 ">
         <ButtonPage Onclick={handleHireMe} type="button">
           <p className=" text-[1.20em]">Hire-me</p>
           {React.createElement(Briefcase, {
