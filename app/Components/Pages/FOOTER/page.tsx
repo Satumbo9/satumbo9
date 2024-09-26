@@ -8,7 +8,7 @@ import { FOOTER_ICON_SIZE } from "../../Util/IconsStyle";
 export default function Footer() {
   return (
     <section
-      className={`h-[25vh]    flex justify-center items-center  p-4 bg-[yellow] text-gray-600 font-bold`}
+      className={`h-[50vh] md:h-[25vh]    flex justify-center items-center bg-[yellow] text-[#5a65c4] `}
     >
       <div
         className="flex flex-col justify-center md:flex-row 
@@ -23,8 +23,8 @@ export default function Footer() {
             alt="satumbo9 logo"
           />
         </Link>
-        <p className="md:hidden">&copy; by satumbo9</p>
-        <div className=" hidden md:flex md:flex-col p-4 text-center items-center justify-center">
+        <p className="hidden font-bold">&copy; by satumbo9</p>
+        <div className=" md:flex md:flex-col p-4 text-center items-center justify-center">
           <code className="font-bold text-[1.4em] 2xl:text-[1.20em]">
             INFORMATION
           </code>
@@ -35,15 +35,15 @@ export default function Footer() {
             <Link href="#"> <code>inTerviews</code></Link>
           </div>
         </div>
-        <div className=" hidden md:flex md:flex-col p-4 text-center">
+        <div className="  md:flex md:flex-col p-4 text-center">
           <code className="font-bold text-[1.4em] 2xl:text-[1.20em] ">CONTACT</code>
-          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.50em]">
+          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.50em] ">
             <Link href="#"><code>hello@satumbo.com</code></Link>
             <Link href="#"><code>+36309917135</code></Link>
           </div>
         </div>
 
-        <div className=" hidden md:flex md:flex-col p-4 text-center">
+        <div className="  md:flex md:flex-col p-4 text-center">
           <code className="font-bold text-[1.4em] 2xl:text-[1.20em] ">SOCIAL</code>
           <div
             className="flex flex-row text-center w-[200px] 2xl:text-[1.50em] gap-3 items-center justify-center 
