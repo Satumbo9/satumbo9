@@ -1,11 +1,11 @@
 import Link from "next/link";
-import {
-  HOVER_COLOR_WEBSITE,
-  COLOR_GREY_900,
-  COLOR_PURPLE,
-  COLOR_YELLOW,
-  COLOR_WHITE,
-} from "../../Const/COLORS";
+// import {
+//   HOVER_COLOR_WEBSITE,
+//   COLOR_GREY_900,
+//   COLOR_PURPLE,
+//   COLOR_YELLOW,
+//   COLOR_WHITE,
+// } from "../../Const/COLORS";
 
 // This the navigation Section
 

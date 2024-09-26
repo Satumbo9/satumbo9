@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Instagram, Youtube, Linkedin } from "lucide-react";
 import React from "react";
 import { FOOTER_ICON_SIZE } from "../../Util/IconsStyle";
-import { COLOR_GRAY } from "../../Const/COLORS";
+// import { COLOR_GRAY } from "../../Const/COLORS";
 export default function Footer() {
   return (
     <section
