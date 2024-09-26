@@ -34,7 +34,7 @@ export default function FormData() {
   const onSubmit: SubmitHandler<FormDataType> = (data) => {
     console.log("Working!!!", data.name, data.email);
     setLogged(true);
-    if(Logged === true) return console.log("Logged");
+    if (Logged === true) return console.log("Logged");
 
     form.reset();
   };
@@ -54,7 +54,7 @@ export default function FormData() {
   );
   return (
     <div className="flex flex-col  items-center ">
-      <span className="font-bold text-[1.80em] md:text-[2.90em] mt-4 text-center  mb-10">
+      <span className="font-bold text-[1.80em] md:text-[2.90em] mt-4 text-center  mb-4">
         {formHeaderMessage}
       </span>
       <Form className="" onSubmit={handleSubmit(onSubmit)} name="talk-to-me">
