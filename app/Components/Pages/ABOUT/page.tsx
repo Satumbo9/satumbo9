@@ -19,19 +19,17 @@ import { GENERAL_ICON_PAGE } from "../../Util/IconsStyle";
 
 export default function AboutPage() {
   return (
-    <section
-      id="ABOUT"
-      className="flex flex-col items-center text-[yellow]"
-    >
+    <section id="ABOUT" className="flex flex-col items-center">
       <div className="w-full flex flex-col items-center md:items-start mt-10">
         <span className="font-bold text-[2em] md:text-[3em] text-center md:text-start flex gap-2 2xl:text-[3em] items-center justify-center">
+          <p className="font-extrabold">WELCOME</p>
           <p className="mb-10">
             {React.createElement(VolumeX, {
               style: GENERAL_ICON_PAGE,
             })}
           </p>
         </span>
-        <p className="md:w-[666px] 2xl:w-[800px] 2xl:text-[1em] text-center md:text-left">
+        <p className="md:w-[666px] 2xl:w-[800px] 2xl:text-[1em] text-center text-[1.30em] md:text-left">
           Edimarf Satumbo is an Angolan-born professional who has a deep passion
           for both technology and business. In 2015, Edimarf moved to Budapest
           to pursue higher education at ELTE University, where he completed a
@@ -58,7 +56,7 @@ export default function AboutPage() {
         className="2xl:mt-[2em] md:mt-[6em] w-full  
       flex items-center justify-center flex-col text-center"
       >
-        <span className="font-bold text-[2em] md:text-[2.20em] flex gap-2 2xl:text-[2.50em] items-center justify-center">
+        <span className="font-extrabold text-[2em] md:text-[2.20em] flex gap-2 2xl:text-[2.50em] items-center justify-center">
           EDUCATION
         </span>
 

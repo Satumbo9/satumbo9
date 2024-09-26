@@ -11,7 +11,7 @@ export default function CardItems({
 }) {
   return (
     <div
-      className="flex flex-col text-center items-center justify-center bg-[yellow] text-gray-600 p-4 transition ease-in-out delay-10   hover:bg-gray-200  duration-100 w-[300px] 2xl:w-[400px] "
+      className="flex flex-col text-center items-center justify-center bg-[yellow] text-[#5a65c4] p-4 transition ease-in-out delay-10   hover:bg-gray-900 hover:text-[yellow] duration-100 w-[300px] 2xl:w-[400px] "
       key={id}
     >
       <p className="text-[1.4em] md:font-bold text-center 2xl:text-[1.20em]">

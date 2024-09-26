@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.className} ${geistMono.variable} ${inter.className} antialiased px-5`}
+        className={`${inter.className} ${geistMono.variable} ${inter.className} antialiased`}
       >
         {children}
       </body>

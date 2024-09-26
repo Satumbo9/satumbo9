@@ -4,10 +4,12 @@ import Link from "next/link";
 import { Instagram, Youtube, Linkedin } from "lucide-react";
 import React from "react";
 import { FOOTER_ICON_SIZE } from "../../Util/IconsStyle";
+import { COLOR_GRAY } from "../../Const/COLORS";
 export default function Footer() {
-
   return (
-    <section className="h-[25vh]  bg-[#FFFF4E]  flex justify-center items-center text-gray-600 p-4">
+    <section
+      className={`h-[25vh]    flex justify-center items-center  p-4 bg-[yellow] text-gray-600 font-bold`}
+    >
       <div
         className="flex flex-col justify-center md:flex-row 
       md:justify-between w-full md:w-[1400px] items-center md:items-start "
@@ -24,7 +26,7 @@ export default function Footer() {
         <p className="md:hidden">&copy; by satumbo9</p>
         <div className=" hidden md:flex md:flex-col p-4 text-center items-center justify-center">
           <p className="font-bold text-[1.4em] 2xl:text-[1.20em]">
-            Information
+            INFORMATION
           </p>
           <div className="flex flex-col text-center w-[200px] 2xl:text-[1.20em]">
             <Link href="#">LinkedIn</Link>
@@ -42,7 +44,7 @@ export default function Footer() {
         </div>
 
         <div className=" hidden md:flex md:flex-col p-4 text-center">
-          <p className="font-bold text-[1.4em] 2xl:text-[1.20em] ">Socials</p>
+          <p className="font-bold text-[1.4em] 2xl:text-[1.20em] ">SOCIAL</p>
           <div
             className="flex flex-row text-center w-[200px] 2xl:text-[1.50em] gap-3 items-center justify-center 
           mt-4"

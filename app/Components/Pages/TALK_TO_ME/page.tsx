@@ -9,10 +9,7 @@ import { Download, Briefcase } from "lucide-react";
 import { HOME_ICON_SIZE } from "../../Util/IconsStyle";
 import React from "react";
 
-
-
 // const BACKGROUND_BLACK = "bg-[#191616]";
-
 
 const handleHireMe = () => {
   console.log("Hire me!!!");
@@ -26,7 +23,7 @@ export default function SendMeAnEmail() {
   return (
     <section
       id="TALK"
-      className="min-h-[150vh]  sm:h-screen  items-center justify-center text-[yellow]"
+      className="min-h-[150vh]  sm:h-screen  items-center justify-center "
     >
       <FormData />
 
