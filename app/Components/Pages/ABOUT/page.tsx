@@ -20,8 +20,8 @@ import React from "react";
 export default function AboutPage() {
   return (
     <section id="ABOUT" className="flex flex-col items-center">
-      <div className="w-full flex flex-col items-center   2xl:items-start">
-        <span className="font-bold text-[2em] md:text-[3em] text-center 2xl:text-start flex gap-2 2xl:text-[3em] items-center justify-center">
+      <div className="w-full flex flex-col items-center   ">
+        <span className="font-bold text-[2em] md:text-[3em] text-center  flex gap-2 2xl:text-[3em] items-center justify-center">
           <p className="font-extrabold ">ABOUT ME</p>
           <p className="">
             {/* {React.createElement(VolumeX, {
@@ -29,12 +29,16 @@ export default function AboutPage() {
             })} */}
           </p>
         </span>
-        <span className=" h-fit 2xl:w-[800px] 2xl:text-[1em] text-center   2xl:text-left lg:text-[1.50em]">
-          <p className="font-bold mb-4 mt-2 text-[1.30em] ">
+        <span className=" h-fit 2xl:w-[800px] 2xl:text-[1em] text-center    lg:text-[1.50em] ">
+          <p className="font-bold mb-4 mt-2 text-[1.30em]  ">
             {" "}
             &lt;2015-2021 &gt;
           </p>
-          <p className="mb-2 text-[1.0em] md:text-[1.0em] xl:text-[1.25em]">
+          <p
+            className="mb-2 text-[1.0em] md:text-[1.0em] xl:text-[1.25em] shadow-md p-2
+
+"
+          >
             Edimarf Satumbo is an Angolan-born professional who has a deep
             passion for both technology and business. In 2015, Edimarf moved to
             Budapest to pursue higher education at ELTE University, where he
@@ -47,7 +51,7 @@ export default function AboutPage() {
             &lt;2021-2024 &gt;
           </p>
 
-          <p className="mb-2 text-[1.0em] md:text-[1.0em] xl:text-[1.25em]">
+          <p className="mb-2 text-[1.0em] md:text-[1.0em] xl:text-[1.25em] shadow-md p-2">
             After graduating, Edimarf decided to expand his expertise by
             pursuing a degree in International Business and Economy, driven by
             his entrepreneurial spirit and a passion for business strategy. This
@@ -58,7 +62,7 @@ export default function AboutPage() {
             often finding accommodation with existing community members.
           </p>
           <p className="font-bold mb-4 mt-2 text-[1.30em]">&lt;On Going&gt;</p>
-          <p className="text-[1.0em] md:text-[1.0em] xl:text-[1.25em]  ">
+          <p className="text-[1.0em] md:text-[1.0em] xl:text-[1.25em]  shadow-md p-2 ">
             His adaptability and drive to connect with diverse cultures and
             professionals reflect his open-minded and forward-thinking approach
             to life. With his diverse academic background and hands-on
