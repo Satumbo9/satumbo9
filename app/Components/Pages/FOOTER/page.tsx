@@ -8,7 +8,7 @@ import { FOOTER_ICON_SIZE } from "../../Util/IconsStyle";
 export default function Footer() {
   return (
     <section
-      className={`h-fit md:h-[25vh]    flex justify-center items-center bg-[yellow] text-[#5a65c4] py-4`}
+      className={`h-fit md:h-[25vh]    flex justify-center items-center bg-[yellow] text-gray-500 py-4`}
     >
       <div
         className="flex flex-col justify-center md:flex-row 
@@ -28,7 +28,7 @@ export default function Footer() {
           <code className="font-bold text-[1.4em] 2xl:text-[1.20em]">
             INFORMATION
           </code>
-          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.20em]">
+          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.20em] text-[0.60em] ">
             <Link href="#"> <code>LinkedIn </code> </Link>
             <Link href="#"> <code>Pexels</code></Link>
             <Link href="#"> <code>VideoMaker Skills</code></Link>
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
         <div className="  md:flex md:flex-col p-4 text-center">
           <code className="font-bold text-[1.4em] 2xl:text-[1.20em] ">CONTACT</code>
-          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.50em] ">
+          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.50em] text-[0.60em] ">
             <Link href="#"><code>hello@satumbo.com</code></Link>
             <Link href="#"><code>+36309917135</code></Link>
           </div>
