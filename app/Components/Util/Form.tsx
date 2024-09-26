@@ -13,7 +13,7 @@ export const Form: React.FC<FormComponentProps> = ({
     <form
       name={name}
       {...props}
-      className="w-[200px] md:w-[400px] flex flex-col gap-4"
+      className="w-[200px] md:w-[400px] flex flex-col gap-4 "
     >
       {children}
     </form>

@@ -25,26 +25,26 @@ export default function Footer() {
         </Link>
         <p className="md:hidden">&copy; by satumbo9</p>
         <div className=" hidden md:flex md:flex-col p-4 text-center items-center justify-center">
-          <p className="font-bold text-[1.4em] 2xl:text-[1.20em]">
+          <code className="font-bold text-[1.4em] 2xl:text-[1.20em]">
             INFORMATION
-          </p>
+          </code>
           <div className="flex flex-col text-center w-[200px] 2xl:text-[1.20em]">
-            <Link href="#">LinkedIn</Link>
-            <Link href="#">Pexels</Link>
-            <Link href="#">VideoMaker Skills</Link>
-            <Link href="#">inTerviews</Link>
+            <Link href="#"> <code>LinkedIn </code> </Link>
+            <Link href="#"> <code>Pexels</code></Link>
+            <Link href="#"> <code>VideoMaker Skills</code></Link>
+            <Link href="#"> <code>inTerviews</code></Link>
           </div>
         </div>
         <div className=" hidden md:flex md:flex-col p-4 text-center">
-          <p className="font-bold text-[1.4em] 2xl:text-[1.20em] ">CONTACT</p>
+          <code className="font-bold text-[1.4em] 2xl:text-[1.20em] ">CONTACT</code>
           <div className="flex flex-col text-center w-[200px] 2xl:text-[1.50em]">
-            <Link href="#">hello@satumbo.com</Link>
-            <Link href="#">+36309917135</Link>
+            <Link href="#"><code>hello@satumbo.com</code></Link>
+            <Link href="#"><code>+36309917135</code></Link>
           </div>
         </div>
 
         <div className=" hidden md:flex md:flex-col p-4 text-center">
-          <p className="font-bold text-[1.4em] 2xl:text-[1.20em] ">SOCIAL</p>
+          <code className="font-bold text-[1.4em] 2xl:text-[1.20em] ">SOCIAL</code>
           <div
             className="flex flex-row text-center w-[200px] 2xl:text-[1.50em] gap-3 items-center justify-center 
           mt-4"

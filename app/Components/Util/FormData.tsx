@@ -46,20 +46,20 @@ export default function FormData() {
     formState: { errors },
   } = form;
   const ERROR_CHECKER_NAME = errors.name && (
-    <p className="text-[red] text-[1.20em]">{errors.name.message}</p>
+    <code className="text-[#ff0084] text-[1.20em]">{errors.name.message}</code>
   );
 
   const ERROR_CHECKER_EMAIL = errors.email && (
-    <p className="text-[red] text-[1.20em]">{errors.email.message}</p>
+    <code className="text-[red] text-[1.20em] ">{errors.email.message}</code>
   );
   return (
     <div className="flex flex-col  items-center justify-center">
-      <span className="font-bold text-[1.80em] md:text-[2.90em] mt-4 text-center  mb-4">
+      <code className="font-bold text-[1.20em] md:text-[1.90em]  mt-4 text-center  mb-4">
         {formHeaderMessage}
-      </span>
-      <Form className="" onSubmit={handleSubmit(onSubmit)} name="talk-to-me">
+      </code>
+      <Form onSubmit={handleSubmit(onSubmit)} name="talk-to-me">
         {/* <div className="h-[150px] "> */}
-        <div className="h-[100px] mb-2">
+        <div className="h-[100px] mb-4">
           <InputForm
             label="Name"
             type="text"
@@ -69,7 +69,7 @@ export default function FormData() {
           />
           {ERROR_CHECKER_NAME}
         </div>
-        <div className="h-[100px] mb-2">
+        <div className="h-[100px] mb-10">
           <InputForm
             label="Email"
             type="text"

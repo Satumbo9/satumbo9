@@ -19,21 +19,23 @@ import React from "react";
 
 export default function AboutPage() {
   return (
-    <section id="ABOUT" className="flex flex-col items-center">
+    <section id="ABOUT" className="flex flex-col items-center md:h-screen">
       <div className="w-full flex flex-col items-center   ">
         <span className="font-bold text-[2em] md:text-[3em] text-center  flex gap-2 2xl:text-[3em] items-center justify-center">
-          <p className="font-extrabold ">ABOUT ME</p>
+          <p className="font-extrabold text-[0.40em] md:text-[1em]">ABOUT ME</p>
           <p className="">
             {/* {React.createElement(VolumeX, {
               style: GENERAL_ICON_PAGE,
             })} */}
           </p>
         </span>
-        <span className=" h-fit 2xl:w-[800px] 2xl:text-[1em] text-center    lg:text-[1.50em] ">
-          <p className="font-bold mb-4 mt-2 text-[1.30em]  ">
+        <span className="  2xl:w-[800px] 2xl:text-[1em] text-center    lg:text-[1.50em] ">
+          <code className="font-bold mb-4 mt-2 md:text-[1.30em] shadow-md bg-red-400
+
+">
             {" "}
             &lt;2015-2021 &gt;
-          </p>
+          </code>
           <p
             className="mb-2 text-[1.0em] md:text-[1.0em] xl:text-[1.25em] shadow-md p-2
 
@@ -47,9 +49,11 @@ export default function AboutPage() {
             facets of the tech industry.
           </p>
 
-          <p className="font-bold mb-4 mt-2 text-[1.30em] ">
+          <code className="font-bold mb-4 mt-2 md:text-[1.30em] shadow-md bg-red-400
+
+">
             &lt;2021-2024 &gt;
-          </p>
+          </code>
 
           <p className="mb-2 text-[1.0em] md:text-[1.0em] xl:text-[1.25em] shadow-md p-2">
             After graduating, Edimarf decided to expand his expertise by
@@ -61,7 +65,9 @@ export default function AboutPage() {
             including Miami and Arizona, where he embraced a nomadic lifestyle,
             often finding accommodation with existing community members.
           </p>
-          <p className="font-bold mb-4 mt-2 text-[1.30em]">&lt;On Going&gt;</p>
+          <code className="font-bold mb-4 mt-2 md:text-[1.30em] shadow-md bg-red-400
+
+">&lt;On Going&gt;</code>
           <p className="text-[1.0em] md:text-[1.0em] xl:text-[1.25em]  shadow-md p-2 ">
             His adaptability and drive to connect with diverse cultures and
             professionals reflect his open-minded and forward-thinking approach
@@ -73,10 +79,7 @@ export default function AboutPage() {
           </p>
         </span>
       </div>
-      <div
-        className="2xl:mt-[2em] w-full  
-      flex items-center justify-center flex-col text-center"
-      ></div>
+
     </section>
   );
 }

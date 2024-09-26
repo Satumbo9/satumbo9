@@ -15,7 +15,7 @@ export const InputForm = forwardRef<HTMLInputElement, InputComponentProps>(
           htmlFor={id}
           className="text-[1.40em] mb-4 md:text[1em] "
         >
-          {label}
+          <code>{label}</code>
         </label>
         <input
           id={id}

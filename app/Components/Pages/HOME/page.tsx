@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <section
       id="Home"
-      className="flex flex-col h-[70vh] md:h-screen items-center "
+      className="flex flex-col h-[70vh] sm:h-screen items-center "
     >
       <div>
         <Image
@@ -30,10 +30,10 @@ export default function HomePage() {
 
         className={`text-[1.25em] md:text-[1.40em] 2xl:text-[1.70em]  px-4 text-center w-[20.10em] md:w-[30.25em] font-bold`}
       >
-        <p>
+        <code>
           Edimarf Satumbo was born in the 90s and still alive making amazing art
           and web projects
-        </p>
+        </code>
       </div>
     </section>
   );
