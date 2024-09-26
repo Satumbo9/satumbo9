@@ -8,7 +8,7 @@ import { FOOTER_ICON_SIZE } from "../../Util/IconsStyle";
 export default function Footer() {
   return (
     <section
-      className={`h-[50vh] md:h-[25vh]    flex justify-center items-center bg-[yellow] text-[#5a65c4] `}
+      className={`h-fit md:h-[25vh]    flex justify-center items-center bg-[yellow] text-[#5a65c4] py-4`}
     >
       <div
         className="flex flex-col justify-center md:flex-row 
