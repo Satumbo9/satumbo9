@@ -13,7 +13,7 @@ export default function CardItems({
     <div
       className="flex flex-col text-center items-center justify-center bg-[yellow] text-[#5a65c4] p-4 transition ease-in-out delay-10 hover:text-[#5a65c4]   hover:bg-white hover:shadow-lg
 
-  duration-100 w-[300px] 2xl:w-[400px]  shadow-2xl
+  duration-100 w-[300px] 2xl:w-[400px]  shadow-2xl h-[200px]
 
  "
       key={id}
