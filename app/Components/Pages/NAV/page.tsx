@@ -22,7 +22,9 @@ export default function Nav() {
             className={`flex gap-[0.40em] hover:text-black font-bold `}
             href={"#Home"}
           >
-            <p className="">Satumbo9</p>
+            <p className="">
+              <code>Satumbo9</code>
+            </p>
             <code>{`</>`}</code>
           </Link>
         </div>
@@ -33,16 +35,20 @@ export default function Nav() {
             className="flex gap-[10em] items-center "
           >
             <li className={`hover:text-gray-900 font-bold`}>
-              <Link href={"#ABOUT"}>about</Link>
-            </li>
-            <li className={`hover:text-gray-900 font-bold`}>
-              <Link className="flex flex-col text-center" href={"#WORK"}>
-                <p>work</p>
-                <p className="text-[16px]">2018-2024</p>
+              <Link href={"#ABOUT"}>
+                <code>about</code>
               </Link>
             </li>
             <li className={`hover:text-gray-900 font-bold`}>
-              <Link href={"#TALK"}>talk to me</Link>
+              <Link className="flex flex-col text-center" href={"#WORK"}>
+                <code>work</code>
+                <code className="text-[16px]">2018-2024</code>
+              </Link>
+            </li>
+            <li className={`hover:text-gray-900 font-bold`}>
+              <Link href={"#TALK"}>
+                <code>talk to me</code>
+              </Link>
             </li>
           </ul>
         </div>
