@@ -29,13 +29,17 @@ export default function SendMeAnEmail() {
 
       <div className="flex flex-col gap-2 md:flex-row items-center justify-center mt-10 ">
         <ButtonPage Onclick={handleHireMe} type="button">
-          <p className=" text-[1.20em]"><code>Hire-me</code></p>
+          <p className=" text-[1.20em]">
+            <code>Hire-me</code>
+          </p>
           {React.createElement(Briefcase, {
             style: HOME_ICON_SIZE,
           })}
         </ButtonPage>
         <ButtonPage Onclick={handleResume} type="button">
-          <p className=" text-[1.20em]"><code>Resume</code></p>
+          <p className=" text-[1.20em]">
+            <code>Resume</code>
+          </p>
           {React.createElement(Download, {
             style: HOME_ICON_SIZE,
             // cursor: "Pointer",

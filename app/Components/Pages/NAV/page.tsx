@@ -12,7 +12,7 @@ import Link from "next/link";
 export default function Nav() {
   return (
     // Header for the nav bar
-    <header className=" hidden  lg:block bg-[yellow] px-10 py-3 text-[#5a65c4]">
+    <header className=" hidden  lg:block bg-[yellow] px-10 py-3 text-[#5a65c4]  ">
       <div
         // className="h-[8vh]  mb-10 md:h-[8vh] md:flex md:justify-between md:text-[2em] md:pt-[30px] md:mb-10"
         className={`lg:flex lg:items-center lg:justify-between md:text-[1.3em] 2xl:text-[2em]  `}

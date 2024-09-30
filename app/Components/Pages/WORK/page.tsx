@@ -12,15 +12,12 @@ export default function WorkPage() {
   return (
     <section
       id="WORK"
-      className="h-screen flex flex-col justify-center items-center text-center"
+      className="h-screen flex flex-col justify-center items-center text-center  "
     >
       <span className="font-extrabold text-[2em] md:text-[2.20em] flex gap-2 2xl:text-[2.50em] items-center justify-center">
         EDUCATION
       </span>
-      <div
-        className="flex flex-col md:flex md:flex-row 2xl:text-[1em] gap-2
-        "
-      >
+      <div className="flex flex-col md:flex md:flex-row 2xl:text-[1em] gap-2 h-fit">
         {EDUCATION_LIST.map((items) => (
           <Link
             target="_blank"
