@@ -19,7 +19,7 @@ export default function Nav() {
       >
         <div className="">
           <Link
-            className={`flex gap-[0.40em] hover:text-black font-bold `}
+            className={`flex gap-[0.40em] hover:text-black  `}
             href={"#Home"}
           >
             <p className="">
@@ -34,18 +34,18 @@ export default function Nav() {
 
             className="flex gap-[10em] items-center "
           >
-            <li className={`hover:text-gray-900 font-bold`}>
+            <li className={`hover:text-gray-900 `}>
               <Link href={"#ABOUT"}>
                 <code>about</code>
               </Link>
             </li>
-            <li className={`hover:text-gray-900 font-bold`}>
+            <li className={`hover:text-gray-900 `}>
               <Link className="flex flex-col text-center" href={"#WORK"}>
                 <code>work</code>
                 <code className="text-[16px]">2018-2024</code>
               </Link>
             </li>
-            <li className={`hover:text-gray-900 font-bold`}>
+            <li className={`hover:text-gray-900 `}>
               <Link href={"#TALK"}>
                 <code>talk to me</code>
               </Link>
