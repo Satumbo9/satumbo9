@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Instagram, Youtube, Linkedin } from "lucide-react";
 import React from "react";
 import { FOOTER_ICON_SIZE } from "../../Util/IconsStyle";
+import { INFORMATION_FOOTER, CONTACT_FOOTER } from "../../Data/ContactInfo";
 // import { COLOR_GRAY } from "../../Const/COLORS";
 export default function Footer() {
   return (
@@ -14,7 +15,7 @@ export default function Footer() {
         className="flex flex-col justify-center md:flex-row 
       md:justify-between w-full md:w-[1400px] items-center md:items-start "
       >
-        <Link href="#" aria-label="logo-top-up">
+        {/* <Link href="#" aria-label="logo-top-up">
           <Image
             className="w-[100px] md:w-[150px]  2xl:w-[170px]  "
             src={satumbo9Logo}
@@ -22,29 +23,37 @@ export default function Footer() {
             width={200}
             alt="satumbo9 logo"
           />
-        </Link>
+        </Link> */}
         <p className="hidden font-bold">&copy; by satumbo9</p>
         <div className=" md:flex md:flex-col p-4 text-center items-center justify-center">
-          <code className="font-bold text-[1.4em] 2xl:text-[1.20em]">
+          <p className="font-bold text-[1.4em] 2xl:text-[1.20em]">
             INFORMATION
-          </code>
-          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.20em] text-[0.60em] ">
-            <Link href="#"> <code>LinkedIn </code> </Link>
-            <Link href="#"> <code>Pexels</code></Link>
-            <Link href="#"> <code>VideoMaker Skills</code></Link>
-            <Link href="#"> <code>inTerviews</code></Link>
+          </p>
+          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.40em] text-[0.60em] ">
+            {INFORMATION_FOOTER.map((item) => {
+              return (
+                <div>
+                  <p>{item.label}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className="  md:flex md:flex-col p-4 text-center">
-          <code className="font-bold text-[1.4em] 2xl:text-[1.20em] ">CONTACT</code>
-          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.50em] text-[0.60em] ">
-            <Link href="#"><code>hello@satumbo.com</code></Link>
-            <Link href="#"><code>+36309917135</code></Link>
+          <p className="font-bold text-[1.4em] 2xl:text-[1.20em] ">CONTACT</p>
+          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.40em] text-[0.60em] ">
+            {CONTACT_FOOTER.map((item) => {
+              return (
+                <div>
+                  <p>{item.label}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
 
         <div className="  md:flex md:flex-col p-4 text-center">
-          <code className="font-bold text-[1.4em] 2xl:text-[1.20em] ">SOCIAL</code>
+          <p className="font-bold text-[1.4em] 2xl:text-[1.20em] ">SOCIAL</p>
           <div
             className="flex flex-row text-center w-[200px] 2xl:text-[1.50em] gap-3 items-center justify-center 
           mt-4"

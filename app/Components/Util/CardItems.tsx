@@ -18,12 +18,12 @@ sm:h-[200px]
  "
       key={id}
     >
-      <code className="text-[1.4em] md:font-bold text-center 2xl:text-[1.20em]">
+      <p className="text-[1.4em] md:font-bold text-center 2xl:text-[1.20em]">
         {title}
-      </code>
-      <code className="hidden md:inline-block ml-4 w-[200px] 2xl:w-[200px] mt-3 text-center italic 2xl:text-[1em]">
+      </p>
+      <p className="hidden md:inline-block ml-4 w-[200px] 2xl:w-[200px] mt-3 text-center italic 2xl:text-[1em]">
         &lt;{description}&gt;
-      </code>
+      </p>
     </div>
   );
 }

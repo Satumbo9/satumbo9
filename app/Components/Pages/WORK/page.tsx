@@ -39,14 +39,22 @@ export default function WorkPage() {
           BACKGROUND
         </span>
 
-        <div className="flex flex-col mt-4 md:flex-row text-[1em] md:text-[1.3em] gap-2">
+        <div className="flex flex-col md:flex md:flex-row 2xl:text-[1em] gap-2 h-fit">
           {PROFESSIONAL_CAREER.map((items) => (
-            <CardItems
+            <Link
+              target="_blank"
               key={items.id}
-              id={items.id}
-              title={items.name}
-              description={items.description}
-            />
+              className="lg:hover:text-[--page-links] mt-3 
+              md:text-[1.3em]"
+              href={items.link}
+            >
+              <CardItems
+                key={items.id}
+                id={items.id}
+                title={items.name}
+                description={items.description}
+              />
+            </Link>
           ))}
         </div>
         {/* <span className="p-5 md:w-[600px] 2xl:w-[800px] mt-30 mb-10 text-10 2xl:text-[1em] h-fit">

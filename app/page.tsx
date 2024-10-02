@@ -4,7 +4,6 @@ import WORK from "@/app/Components/Pages/WORK/page";
 import SEND_ME_EMAIL from "@/app/Components/Pages/TALK_TO_ME/page";
 import NAV from "@/app/Components/Pages/NAV/page";
 import FOOTER from "@/app/Components/Pages/FOOTER/page";
-// import Modal from "./Components/Util/Modal";
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <WORK />
       <SEND_ME_EMAIL />
       <FOOTER />
-      {/* <Modal /> */}
     </main>
   );
 }

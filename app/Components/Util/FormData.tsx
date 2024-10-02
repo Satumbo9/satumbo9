@@ -46,17 +46,17 @@ export default function FormData() {
     formState: { errors },
   } = form;
   const ERROR_CHECKER_NAME = errors.name && (
-    <code className="text-[#ff0084] text-[1.20em]">{errors.name.message}</code>
+    <p className="text-[#ff0084] text-[1.40em]">{errors.name.message}</p>
   );
 
   const ERROR_CHECKER_EMAIL = errors.email && (
-    <code className="text-[red] text-[1.20em] ">{errors.email.message}</code>
+    <p className="text-[red] text-[1.40em] ">{errors.email.message}</p>
   );
   return (
     <div className="flex flex-col  items-center justify-center">
-      <code className="font-bold text-[1.20em] md:text-[1.90em]  mt-4 text-center  mb-4">
+      <p className="font-bold text-[1.40em] md:text-[1.90em]  mt-4 text-center  mb-4">
         {formHeaderMessage}
-      </code>
+      </p>
       <Form onSubmit={handleSubmit(onSubmit)} name="talk-to-me">
         {/* <div className="h-[150px] "> */}
         <div className="h-[100px] mb-4">
