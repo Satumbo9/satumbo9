@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <section
       id="ABOUT"
-      className="flex flex-col items-center xl:h-screen px-10 md:px-0 "
+      className="flex flex-col items-center md:h-[screen] px-10 md:px-0 "
     >
       <div className="w-full flex flex-col items-center   ">
         <span className="font-bold text-[2em] md:text-[3em] text-center  flex gap-2 2xl:text-[3em] items-center justify-center">
