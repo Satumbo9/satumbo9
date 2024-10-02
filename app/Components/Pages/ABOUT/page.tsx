@@ -1,5 +1,5 @@
 import React from "react";
-import CardInfo from "@/app/Components/Util/CartInfo";
+// import CardInfo from "@/app/Components/Util/CartInfo";
 import CartInfo from "@/app/Components/Util/CartInfo";
 import H1 from "../../Util/H1";
 export default function AboutPage() {

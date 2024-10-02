@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "../Pages/NAV/page";
+// import Nav from "../Pages/NAV/page";
 import Link from "next/link";
 
 interface NavLinksProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
@@ -14,6 +14,7 @@ const NavLinks = React.forwardRef<HTMLAnchorElement, NavLinksProps>(
       <div>
         <Link
           className={` text-[2em] font-bold ${className}`}
+          ref={ref}
           href={href}
           {...props}
         >
@@ -23,4 +24,6 @@ const NavLinks = React.forwardRef<HTMLAnchorElement, NavLinksProps>(
     );
   }
 );
+
+NavLinks.displayName = "NavLinks";
 export default NavLinks;

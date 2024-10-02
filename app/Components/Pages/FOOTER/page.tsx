@@ -1,5 +1,5 @@
-import satumbo9Logo from "../../Img/logo/satumbo9-logo.png";
-import Image from "next/image";
+// import satumbo9Logo from "../../Img/logo/satumbo9-logo.png";
+// import Image from "next/image";
 import Link from "next/link";
 import { Instagram, Youtube, Linkedin } from "lucide-react";
 import React from "react";
@@ -32,7 +32,7 @@ export default function Footer() {
           <div className="flex flex-col text-center w-[200px] 2xl:text-[1.40em] text-[1.40em] ">
             {INFORMATION_FOOTER.map((item) => {
               return (
-                <div>
+                <div key={item.id}>
                   <p>{item.label}</p>
                 </div>
               );
@@ -44,7 +44,7 @@ export default function Footer() {
           <div className="flex flex-col text-center w-[200px] 2xl:text-[1.40em] text-[1.40em] ">
             {CONTACT_FOOTER.map((item) => {
               return (
-                <div>
+                <div key={item.id}>
                   <p>{item.label}</p>
                 </div>
               );

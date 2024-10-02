@@ -10,11 +10,14 @@ const CartInfo = React.forwardRef<HTMLDivElement, CartProps>(
       <div
         className="mb-2 text-[1.0em] md:text-[1.0em] xl:text-[1.25em] shadow-md p-2 "
         {...props}
+        ref={ref}
       >
         {children}
       </div>
     );
   }
 );
+
+CartInfo.displayName = "CardInfo";
 
 export default CartInfo;
