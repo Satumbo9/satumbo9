@@ -9,7 +9,7 @@ import { INFORMATION_FOOTER, CONTACT_FOOTER } from "../../Data/ContactInfo";
 export default function Footer() {
   return (
     <section
-      className={`h-fit md:h-[25vh]    flex justify-center items-center bg-[yellow] text-gray-500 py-4`}
+      className={`h-fit md:h-[25vh]    flex justify-center items-center bg-[yellow]  text-gray-500 py-4`}
     >
       <div
         className="flex flex-col justify-center md:flex-row 
@@ -26,10 +26,10 @@ export default function Footer() {
         </Link> */}
         <p className="hidden font-bold">&copy; by satumbo9</p>
         <div className=" md:flex md:flex-col p-4 text-center items-center justify-center">
-          <p className="font-bold text-[1.4em] 2xl:text-[1.20em]">
+          <p className="font-bold text-[1.40em] 2xl:text-[1.20em]">
             INFORMATION
           </p>
-          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.40em] text-[0.60em] ">
+          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.40em] text-[1.40em] ">
             {INFORMATION_FOOTER.map((item) => {
               return (
                 <div>
@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
         <div className="  md:flex md:flex-col p-4 text-center">
           <p className="font-bold text-[1.4em] 2xl:text-[1.20em] ">CONTACT</p>
-          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.40em] text-[0.60em] ">
+          <div className="flex flex-col text-center w-[200px] 2xl:text-[1.40em] text-[1.40em] ">
             {CONTACT_FOOTER.map((item) => {
               return (
                 <div>

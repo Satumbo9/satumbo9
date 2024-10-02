@@ -29,9 +29,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html
+      lang="en"
+      className="scroll-smooth bg-gradient-to-b from-[#9967da]  to-[#5a65c4]"
+    >
       <body
-        className={`${inter.className} ${geistMono.variable} ${inter.className} antialiased`}
+        className={`${inter.className} ${geistMono.variable} ${inter.className} md:px-[60px] antialiased`}
       >
         {children}
       </body>

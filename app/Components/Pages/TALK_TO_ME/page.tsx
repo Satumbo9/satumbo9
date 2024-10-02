@@ -23,24 +23,34 @@ export default function SendMeAnEmail() {
   return (
     <section
       id="TALK"
-      className=" sm:h-screen flex flex-col items-center justify-center py-10"
+      className=" sm:h-screen flex flex-col items-center justify-center py-10 "
     >
-      <FormData />
+      <div className="bg-white bg-opacity-10 p-10 bg-blur rounded ">
+        <FormData />
 
-      <div className="flex flex-col gap-2 md:flex-row items-center justify-center mt-10 ">
-        <ButtonPage Onclick={handleHireMe} type="button">
-          <p className=" text-[1.40em]">Hire-me</p>
-          {React.createElement(Briefcase, {
-            style: HOME_ICON_SIZE,
-          })}
-        </ButtonPage>
-        <ButtonPage Onclick={handleResume} type="button">
-          <p className=" text-[1.40em]">Resume</p>
-          {React.createElement(Download, {
-            style: HOME_ICON_SIZE,
-            // cursor: "Pointer",
-          })}
-        </ButtonPage>
+        <div className="flex flex-col gap-2 md:flex-row items-center justify-center mt-10 ">
+          <ButtonPage
+            className="hover:font-bold"
+            Onclick={handleHireMe}
+            type="button"
+          >
+            <p className=" text-[1.40em]">Hire-me</p>
+            {React.createElement(Briefcase, {
+              style: HOME_ICON_SIZE,
+            })}
+          </ButtonPage>
+          <ButtonPage
+            className="hover:font-bold "
+            Onclick={handleResume}
+            type="button"
+          >
+            <p className=" text-[1.40em] ">Resume</p>
+            {React.createElement(Download, {
+              style: HOME_ICON_SIZE,
+              // cursor: "Pointer",
+            })}
+          </ButtonPage>
+        </div>
       </div>
     </section>
   );

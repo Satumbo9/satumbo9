@@ -54,7 +54,7 @@ export default function FormData() {
   );
   return (
     <div className="flex flex-col  items-center justify-center">
-      <p className="font-bold text-[1.40em] md:text-[1.90em]  mt-4 text-center  mb-4">
+      <p className="font-bold text-[1.40em] md:text-[1.90em]  mt-4 text-center  mb-4 drop-shadow-md">
         {formHeaderMessage}
       </p>
       <Form onSubmit={handleSubmit(onSubmit)} name="talk-to-me">

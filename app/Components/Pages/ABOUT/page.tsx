@@ -4,10 +4,13 @@ import CartInfo from "@/app/Components/Util/CartInfo";
 import H1 from "../../Util/H1";
 export default function AboutPage() {
   return (
-    <section id="ABOUT" className="flex flex-col items-center xl:h-screen">
+    <section
+      id="ABOUT"
+      className="flex flex-col items-center xl:h-screen px-10 md:px-0 "
+    >
       <div className="w-full flex flex-col items-center   ">
         <span className="font-bold text-[2em] md:text-[3em] text-center  flex gap-2 2xl:text-[3em] items-center justify-center">
-          <p className="font-extrabold text-[0.90em] md:text-[1em] mb-5">
+          <p className="font-extrabold text-[0.90em] md:text-[1em] mb-5 drop-shadow-md">
             ABOUT ME
           </p>
         </span>

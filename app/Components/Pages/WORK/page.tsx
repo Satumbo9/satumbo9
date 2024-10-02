@@ -14,9 +14,9 @@ export default function WorkPage() {
       id="WORK"
       className="h-screen flex flex-col justify-center items-center text-center  "
     >
-      <span className="font-extrabold text-[2em] md:text-[2.20em] flex gap-2 2xl:text-[2.50em] items-center justify-center">
+      <p className="font-extrabold text-[2em] md:text-[2.20em] flex gap-2 2xl:text-[2.50em] items-center justify-center drop-shadow-md">
         EDUCATION
-      </span>
+      </p>
       <div className="flex flex-col md:flex md:flex-row 2xl:text-[1em] gap-2 h-fit">
         {EDUCATION_LIST.map((items) => (
           <Link
@@ -35,9 +35,9 @@ export default function WorkPage() {
         ))}
       </div>
       <div className="text-center flex flex-col items-center">
-        <span className="text-[2em] md:text-[2.20em] font-bold flex gap-2  2xl:text-[2.50em] mt-5 items-center justify-center">
+        <p className="text-[2em] md:text-[2.20em] font-bold flex gap-2  2xl:text-[2.50em] mt-5 items-center justify-center drop-shadow-md">
           BACKGROUND
-        </span>
+        </p>
 
         <div className="flex flex-col md:flex md:flex-row 2xl:text-[1em] gap-2 h-fit">
           {PROFESSIONAL_CAREER.map((items) => (

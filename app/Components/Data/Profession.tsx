@@ -13,7 +13,7 @@ export const PROFESSIONAL_CAREER = [
   },
   {
     id: 3,
-    name: "Umoja",
+    name: "FFIMOH",
     description: "Web Developer",
     link: "#",
   },

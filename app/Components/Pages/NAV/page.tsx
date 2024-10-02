@@ -10,12 +10,14 @@ import NavLinks from "../../Util/NavLinks";
 
 // This the navigation Section
 
+const date = new Date();
+
 export default function Nav() {
   return (
     // Header for the nav bar
     // className={`lg:flex lg:items-center lg:justify-between md:text-[1.3em] 2xl:text-[2em]
 
-    <header className=" hidden  xl:block px-10 py-3 text-[yellow]  ">
+    <header className=" hidden  xl:block px-10 py-3 text-[yellow] hover:bg-white hover:bg-opacity-10 p-10  rounded ">
       <div className="flex justify-between items-center">
         <NavLinks className={`flex gap-[0.40em] `} href={"#Home"}>
           <p>Satumbo9</p>
@@ -34,7 +36,7 @@ export default function Nav() {
             <li>
               <NavLinks className="flex flex-col text-center" href={"#WORK"}>
                 <p>work</p>
-                <code className="text-[16px]">2018-2024</code>
+                <code className="text-[16px]">2015-{date.getFullYear()}</code>
               </NavLinks>
             </li>
             <li>
