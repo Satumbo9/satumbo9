@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <section
       id="Home"
-      className="flex flex-col h-[60vh] md:h-screen  items-center  px-10 md:px-0"
+      className="flex flex-col h-[80vh] md:h-screen  items-center  px-10 md:px-0"
     >
       <div className="">
         <Image
