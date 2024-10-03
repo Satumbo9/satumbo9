@@ -9,7 +9,7 @@ const H1 = ({
 }) => {
   return (
     <div
-      className={`font-bold mb-4 mt-2 md:text-[1.30em] shadow-md bg-red-400 max-w-[200px] rounded px-4 ${className}`}
+      className={`font-bold  mt-4 md:text-[1.30em] shadow-md bg-red-400 max-w-[200px] rounded px-4 ${className}`}
     >
       {children}
     </div>

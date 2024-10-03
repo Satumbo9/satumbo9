@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 
 import "./globals.css";
 
@@ -34,7 +35,7 @@ export default function RootLayout({
       className="scroll-smooth bg-gradient-to-b from-[#9967da]  to-[#5a65c4]"
     >
       <body
-        className={`${inter.className} ${geistMono.variable} ${inter.className} md:px-[60px] antialiased`}
+        className={` ${geistMono.variable} ${inter.className} ${inter.className}  md:px-[60px] antialiased`}
       >
         {children}
       </body>
