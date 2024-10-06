@@ -72,11 +72,7 @@ export default function Nav() {
     rounded transition-all delay-100"
           >
             <li className="">
-              <NavLinks
-                onClick={() => setMenuClicked(false)}
-                className={``}
-                href={"#ABOUT"}
-              >
+              <NavLinks onClick={() => setMenuClicked(false)} href={"#ABOUT"}>
                 <p>about</p>
               </NavLinks>
             </li>

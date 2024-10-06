@@ -6,7 +6,7 @@ interface NavLinksProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children?: React.ReactNode;
   className?: string;
   href: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const NavLinks = React.forwardRef<HTMLAnchorElement, NavLinksProps>(
