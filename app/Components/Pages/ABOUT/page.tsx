@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <section
       id="ABOUT"
-      className="flex flex-col items-center md:h-[screen] px-10 md:px-0 "
+      className="flex flex-col items-center md:h-[screen] mx-5 "
     >
       <div className="w-full flex flex-col items-center   ">
         <span className="font-bold text-[2em] md:text-[3em] text-center  flex gap-2 2xl:text-[3em] items-center justify-center">
@@ -15,10 +15,10 @@ export default function AboutPage() {
           </p>
         </span>
 
-        <div className="  2xl:w-[800px] 2xl:text-[1em] text-center flex items-center flex-col    lg:text-[1.50em] ">
+        <div className="  2xl:w-[800px]  text-center flex items-center flex-col   text-xl ">
           <H1> &lt;2015-2021 &gt;</H1>
 
-          <CartInfo className="mb-2 text-[1.0em] md:text-[1.0em] xl:text-[1.25em] shadow-md p-2 ">
+          <CartInfo className="mb-2  hover:shadow-xl p-2 ">
             Edimarf Satumbo is an Angolan-born professional who has a deep
             passion for both technology and business. In 2015, Edimarf moved to
             Budapest to pursue higher education at ELTE University, where he
@@ -29,7 +29,7 @@ export default function AboutPage() {
 
           <H1>&lt;2021-2024 &gt;</H1>
 
-          <CartInfo className="mb-2 text-[1.0em] md:text-[1.0em] xl:text-[1.25em] shadow-md p-2 ">
+          <CartInfo className="mb-2 hover:shadow-xl p-2 ">
             After graduating, Edimarf decided to expand his expertise by
             pursuing a degree in International Business and Economy, driven by
             his entrepreneurial spirit and a passion for business strategy. This
@@ -40,7 +40,7 @@ export default function AboutPage() {
             often finding accommodation with existing community members.
           </CartInfo>
           <H1>&lt;On Going&gt;</H1>
-          <CartInfo className="text-[1.0em] md:text-[1.0em] xl:text-[1.25em]  shadow-md p-2  ">
+          <CartInfo className=" hover:shadow-xl p-2  ">
             His adaptability and drive to connect with diverse cultures and
             professionals reflect his open-minded and forward-thinking approach
             to life. With his diverse academic background and hands-on

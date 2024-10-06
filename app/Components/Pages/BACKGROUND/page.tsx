@@ -1,29 +1,28 @@
 //
 // import Image from "next/image";
 import CardItems from "../../Util/CardItems";
-import { PROFESSIONAL_CAREER } from "@/app/Components/Data/Profession";
+import { Background } from "@/app/Components/Data/Background";
 import Link from "next/link";
 // import { Computer } from "lucide-react";
 import React from "react";
-import { EDUCATION_LIST } from "../../Data/Education";
+import { educationLIST } from "../../Data/Education";
 // import { GENERAL_ICON_PAGE } from "../../Util/IconsStyle";
 
 export default function WorkPage() {
   return (
     <section
       id="WORK"
-      className="h-screen flex flex-col justify-center items-center text-center  "
+      className="h-screen flex flex-col md:flex-rows justify-center items-center text-center  "
     >
-      <p className="font-extrabold text-[2em] md:text-[2.20em] flex gap-2 2xl:text-[2.50em] items-center justify-center drop-shadow-md">
+      <p className="font-extrabold flex gap-2  items-center justify-center drop-shadow-md text-4xl">
         EDUCATION
       </p>
-      <div className="flex flex-col md:flex md:flex-row 2xl:text-[1em] gap-2 h-fit">
-        {EDUCATION_LIST.map((items) => (
+      <div className="flex flex-col sm:flex-row md:flex md:flex-row  gap-2 h-fit">
+        {educationLIST.map((items) => (
           <Link
             target="_blank"
             key={items.id}
-            className="lg:hover:text-[--page-links] mt-3 
-              md:text-[1.3em]"
+            className="lg:hover:text-[--page-links] mt-3 "
             href={items.link}
           >
             <CardItems
@@ -35,17 +34,16 @@ export default function WorkPage() {
         ))}
       </div>
       <div className="text-center flex flex-col items-center">
-        <p className="text-[2em] md:text-[2.20em] font-bold flex gap-2  2xl:text-[2.50em] mt-5 items-center justify-center drop-shadow-md">
+        <p className="text-[2em] text-4xl font-bold flex gap-2   mt-5 items-center justify-center drop-shadow-md">
           BACKGROUND
         </p>
 
-        <div className="flex flex-col md:flex md:flex-row 2xl:text-[1em] gap-2 h-fit">
-          {PROFESSIONAL_CAREER.map((items) => (
+        <div className="flex flex-col sm:flex-row md:flex md:flex-row  gap-2 h-fit">
+          {Background.map((items) => (
             <Link
               target="_blank"
               key={items.id}
-              className="lg:hover:text-[--page-links] mt-3 
-              md:text-[1.3em]"
+              className="lg:hover:text-[--page-links] mt-3 "
               href={items.link}
             >
               <CardItems

@@ -1,4 +1,11 @@
-export const EDUCATION_LIST = [
+interface EducationData {
+  id: number;
+  name: string;
+  description: string;
+  link: string;
+}
+
+export const educationLIST: EducationData[] = [
   {
     id: 1,
     name: "ELSAMINA",

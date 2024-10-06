@@ -14,7 +14,11 @@ const NavLinks = React.forwardRef<HTMLAnchorElement, NavLinksProps>(
       <div>
         {/* #9967da; --Background-secondary: #5a65c4; */}
         <Link
-          className={` flex justify-center h-[80px] items-center text-[2em]  text-[yellow] border-b-4 border-transparent hover:border-solid hover:border-b-4  hover:border-[yellow] hover:text-[white] ${className}`}
+          className={` flex justify-center h-[80px] items-center   
+            text-[yellow] border-b-4 border-transparent hover:border-solid hover:border-b-4  
+            hover:border-[yellow] hover:text-[white] font-bold
+            transition-all delay-75
+            ${className}`}
           ref={ref}
           href={href}
           {...props}

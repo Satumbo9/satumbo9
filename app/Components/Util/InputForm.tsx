@@ -11,16 +11,13 @@ export const InputForm = forwardRef<HTMLInputElement, InputComponentProps>(
   ({ label, id, ...props }, ref) => {
     return (
       <div className="flex flex-col">
-        <label
-          htmlFor={id}
-          className="text-[1.40em] mb-4 md:text[1em] "
-        >
+        <label htmlFor={id} className="text-2xl mb-4 ">
           <code>{label}</code>
         </label>
         <input
           id={id}
           ref={ref} // Attach the ref here
-          className="h-[40px] p-4 text-black md:h-[50px] md:text-[1.50em]"
+          className="h-[40px] p-4 text-black md:h-[50px] text-2xl"
           {...props}
         />
       </div>
@@ -28,5 +25,4 @@ export const InputForm = forwardRef<HTMLInputElement, InputComponentProps>(
   }
 );
 
-
-InputForm.displayName = 'InputForm';
+InputForm.displayName = "InputForm";

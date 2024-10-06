@@ -14,7 +14,7 @@ export default function HomePage() {
   return (
     <section
       id="Home"
-      className="flex flex-col h-[65svh] md:h-screen  items-center  px-10 md:px-0"
+      className="flex flex-col h-screen md:h-screen  items-center justify-center md:justify-start  "
     >
       <div className="">
         <Image
@@ -36,7 +36,7 @@ export default function HomePage() {
       <div
         // className="text-[1.5em]  text-center md:text-[1.5em] md:w-[666px] md:h-[68px] md:text-center "
 
-        className={`text-[1.45em] w-[14.10em] md:text-[1.40em] 2xl:text-[1.70em]  px-4 text-center  md:w-[30.25em] mb-10 text-wrap `}
+        className={`text-xl w-4/4 md:text-2xl  px-4 text-center  md:w-[30.25em] mb-10 text-wrap `}
       >
         <p>
           Edimarf Satumbo was born in the 90s and still alive making amazing art

@@ -11,7 +11,13 @@ export default function CardItems({
 }) {
   return (
     <div
-      className="flex flex-col text-center items-center justify-center bg-[white] bg-opacity-10   text-[white] p-4 transition ease-in-out delay-10 hover:text-[#5a65c4]   hover:bg-[yellow] rounded hover:shadow-lg
+      className="flex flex-col text-center 
+      items-center justify-center bg-[white] bg-opacity-10   
+      text-[white] p-4 transition-all ease-in-out delay-75 hover:text-[#5a65c4]   
+      hover:bg-[yellow] rounded hover:shadow-lg
+      sm:w-48 md:w-auto
+      
+     
 
 sm:h-[200px]
 
