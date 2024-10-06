@@ -23,8 +23,8 @@ const handleResume = () => {
 export default function SendMeaMessage() {
   return (
     <section
-      id="TALK"
-      className=" sm:h-screen flex flex-col items-center justify-center py-10 "
+      id="INQUIRY"
+      className="h-screen flex flex-col items-center justify-center py-10 "
     >
       <div className="bg-white bg-opacity-10 p-10 bg-blur rounded ">
         <ContactForm />

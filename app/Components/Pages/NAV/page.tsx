@@ -45,7 +45,7 @@ export default function Nav() {
               </NavLinks>
             </li>
             <li>
-              <NavLinks href={"#TALK"}>
+              <NavLinks href={"#INQUIRY"}>
                 <p>talk to me</p>
               </NavLinks>
             </li>
@@ -87,7 +87,7 @@ export default function Nav() {
               </NavLinks>
             </li>
             <li>
-              <NavLinks onClick={() => setMenuClicked(false)} href={"#TALK"}>
+              <NavLinks onClick={() => setMenuClicked(false)} href={"#INQUIRY"}>
                 <p>talk to me</p>
               </NavLinks>
             </li>

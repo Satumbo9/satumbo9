@@ -9,7 +9,9 @@ import { informationFOOTER, contactFOOTER } from "../../Data/ContactInfo";
 export default function Footer() {
   return (
     <section
-      className={`h-fit md:h-[25vh]    flex justify-center items-center bg-[yellow]  text-gray-500  `}
+      className={`h-fit md:h-[25vh]    
+        flex justify-center items-center 
+        bg-[yellow]  text-gray-500  `}
     >
       <div
         className="flex flex-col justify-center md:flex-row 
@@ -18,7 +20,7 @@ export default function Footer() {
         <p className="hidden font-bold">&copy; by satumbo9</p>
         <div className="  flex flex-col p-4 text-center items-center justify-center">
           <p className="font-bold text-3xl">INFORMATION</p>
-          <div className="flex flex-col text-center w-fit  text-2xl ">
+          <div className="flex flex-col text-center w-fit text-xl ">
             {informationFOOTER.map((item) => {
               return (
                 <Link href={item.href} className="mt-5" key={item.id}>
@@ -30,7 +32,7 @@ export default function Footer() {
         </div>
         <div className="  md:flex md:flex-col p-4 text-center">
           <p className="font-bold text-3xl ">CONTACT</p>
-          <div className="flex flex-col text-center w-fit  text-2xl ">
+          <div className="flex flex-col text-center w-fit  text-xl ">
             {contactFOOTER.map((item) => {
               return (
                 <div className="mt-5" key={item.id}>

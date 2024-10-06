@@ -17,7 +17,7 @@ export const InputForm = forwardRef<HTMLInputElement, InputComponentProps>(
         <input
           id={id}
           ref={ref} // Attach the ref here
-          className="h-[40px] p-4 text-black md:h-[50px] text-2xl"
+          className="h-[40px] p-4 text-black md:h-[50px] text-lg"
           {...props}
         />
       </div>
