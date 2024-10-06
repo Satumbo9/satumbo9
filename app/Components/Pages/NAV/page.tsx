@@ -1,24 +1,8 @@
-// import Link from "next/link";
-// import { Link } from "lucide-react";
 import NavLinks from "../../Util/NavLinks";
-// import Link from "next/link";
-// import {
-//   HOVER_COLOR_WEBSITE,
-//   COLOR_GREY_900,
-//   COLOR_PURPLE,
-//   COLOR_YELLOW,
-//   COLOR_WHITE,
-// } from "../../Const/COLORS";
-
-// This the navigation Section
-
 const date = new Date();
 
 export default function Nav() {
   return (
-    // Header for the nav bar
-    // className={`lg:flex lg:items-center lg:justify-between md:text-[1.3em] 2xl:text-[2em]
-
     <header
       className="   xl:block px-10 py-3 text-[yellow] 
     md:hover:bg-white md:hover:bg-opacity-10 p-10 xl:text-3xl
@@ -62,7 +46,7 @@ export default function Nav() {
 
       {/* In small screens */}
 
-      <div className="xl:hidden">
+      <div className="2xl:hidden">
         <ul
           className="flex flex-col items-center bg-white bg-opacity-10 p-10 text-3xl
     w-full
