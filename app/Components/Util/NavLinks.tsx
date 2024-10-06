@@ -6,10 +6,11 @@ interface NavLinksProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   children?: React.ReactNode;
   className?: string;
   href: string;
+  onClick: () => void;
 }
 
 const NavLinks = React.forwardRef<HTMLAnchorElement, NavLinksProps>(
-  ({ className, href, children, ...props }, ref) => {
+  ({ className, href, children, onClick, ...props }, ref) => {
     return (
       <div>
         {/* #9967da; --Background-secondary: #5a65c4; */}
@@ -21,6 +22,7 @@ const NavLinks = React.forwardRef<HTMLAnchorElement, NavLinksProps>(
             ${className}`}
           ref={ref}
           href={href}
+          onClick={onClick}
           {...props}
         >
           {children}

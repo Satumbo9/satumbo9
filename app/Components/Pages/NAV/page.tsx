@@ -1,11 +1,20 @@
+"use client";
+import { Menu } from "lucide-react";
 import NavLinks from "../../Util/NavLinks";
+import { useState } from "react";
+import React from "react";
+
 const date = new Date();
 
 export default function Nav() {
+  const [MenuClicked, setMenuClicked] = useState(false);
+  const handleMenuCick = () => {
+    setMenuClicked((prevSate) => !prevSate);
+  };
   return (
     <header
-      className="   xl:block px-10 py-3 text-[yellow] 
-    md:hover:bg-white md:hover:bg-opacity-10 p-10 xl:text-3xl
+      className="   2xl:block px-10 py-3 text-[yellow] 
+    2xl:hover:bg-white 2xl:hover:bg-opacity-10 p-10 2xl:text-3xl
     w-full
     rounded transition delay-100 "
     >
@@ -46,29 +55,48 @@ export default function Nav() {
 
       {/* In small screens */}
 
-      <div className="2xl:hidden">
-        <ul
-          className="flex flex-col items-center bg-white bg-opacity-10 p-10 text-3xl
+      <div className="flex justify-end 2xl:hidden" onClick={handleMenuCick}>
+        {React.createElement(Menu, {
+          style: {
+            width: 60,
+            height: 60,
+          },
+        })}
+      </div>
+
+      <div className="2xl:hidden flex justify-end ">
+        {MenuClicked ? (
+          <ul
+            className="flex flex-col items-center bg-white bg-opacity-10 p-10 text-3xl
     w-full
     rounded transition-all delay-100"
-        >
-          <li className="">
-            <NavLinks className={``} href={"#ABOUT"}>
-              <p>about</p>
-            </NavLinks>
-          </li>
-          <li>
-            <NavLinks className="flex flex-col text-center" href={"#WORK"}>
-              <p>work</p>
-              <code className="text-[16px]">2015-{date.getFullYear()}</code>
-            </NavLinks>
-          </li>
-          <li>
-            <NavLinks href={"#TALK"}>
-              <p>talk to me</p>
-            </NavLinks>
-          </li>
-        </ul>
+          >
+            <li className="">
+              <NavLinks
+                onClick={() => setMenuClicked(false)}
+                className={``}
+                href={"#ABOUT"}
+              >
+                <p>about</p>
+              </NavLinks>
+            </li>
+            <li>
+              <NavLinks
+                onClick={() => setMenuClicked(false)}
+                className="flex flex-col text-center"
+                href={"#WORK"}
+              >
+                <p>work</p>
+                <code className="text-[16px]">2015-{date.getFullYear()}</code>
+              </NavLinks>
+            </li>
+            <li>
+              <NavLinks onClick={() => setMenuClicked(false)} href={"#TALK"}>
+                <p>talk to me</p>
+              </NavLinks>
+            </li>
+          </ul>
+        ) : null}
       </div>
     </header>
   );
